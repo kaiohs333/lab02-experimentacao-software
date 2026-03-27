@@ -1,0 +1,15 @@
+(Sprint 1):
+
+  1. collect_repos.py — usa a API GraphQL do GitHub para buscar os top-1000 repos Java por estrelas,
+  salvando: nome, estrelas, data de criação, releases, forks. Resultado: data/repositories.csv
+  2. run_metrics.py — pega um repositório do CSV, clona ele localmente, roda o ck.jar que gera CSVs com CBO,
+   DIT, LCOM, LOC por classe. Depois sumariza os valores (mediana, média, desvio padrão).
+  3. Baixar o CK — você precisará baixar o .jar manualmente (vou te passar o link).
+
+
+Etapa 1: collect_repos.py                                                                               
+                                                                                                            
+  Este script vai:                                                                                          
+  - Conectar na API GraphQL do GitHub usando seu token                                                      
+  - Buscar 1000 repos Java ordenados por estrelas (10 páginas × 100 repos)                                  
+  - Salvar em data/repositories.csv com: nome, owner, estrelas, data de criação, releases, forks            
