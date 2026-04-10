@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+react-native-config/react-native-config,4954,656,2016-02-23T00:19:11Z,33,20,88,4.0,4.6,2.9451,1.0,1.5,0.6882,1.0,1.95,3.4561,13.5,22.15,20.5433

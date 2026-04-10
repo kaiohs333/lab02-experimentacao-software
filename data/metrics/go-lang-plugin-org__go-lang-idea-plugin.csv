@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+go-lang-plugin-org/go-lang-idea-plugin,4540,567,2010-08-29T08:20:01Z,21,1132,14079,6.0,8.1811,8.9456,2.0,2.0989,1.342,3.0,110.0292,2012.3362,18.0,40.0733,132.7213

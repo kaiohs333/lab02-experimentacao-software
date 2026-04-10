@@ -1,0 +1,10 @@
+using SampleTypeSpec;
+using Microsoft.TypeSpec.Generator.Customizations;
+
+namespace Sample.Models;
+
+public partial class MockInputModel
+{
+    [CodeGenMember("Prop1")]
+    private string _prop1 = "bar";
+}

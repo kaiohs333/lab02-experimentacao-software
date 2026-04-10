@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+oshi/oshi,5197,918,2012-02-10T12:46:48Z,170,899,19905,4.0,5.3782,5.512,1.0,1.5984,1.1599,1.0,32.208,121.7989,30.0,57.5884,76.1443

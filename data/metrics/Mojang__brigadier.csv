@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Mojang/brigadier,3680,409,2014-09-15T08:48:24Z,3,85,452,5.0,6.6353,5.4376,1.0,1.1529,0.3936,0.0,44.5529,231.113,29.0,50.7294,77.1982

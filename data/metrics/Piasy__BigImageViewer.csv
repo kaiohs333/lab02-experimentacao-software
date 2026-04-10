@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Piasy/BigImageViewer,3987,408,2016-11-06T09:55:02Z,0,84,998,3.0,4.6071,4.8172,1.0,1.2857,0.528,1.0,12.8095,61.2883,11.0,29.9167,54.0384

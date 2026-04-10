@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+micrometer-metrics/micrometer,4833,1080,2017-04-10T21:36:51Z,291,2016,41546,4.0,5.7654,6.5984,1.0,1.2842,0.6434,0.0,19.9995,134.7455,18.0,42.433,73.7596

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+luontola/retrolambda,3527,226,2013-07-20T07:25:22Z,0,240,604,1.0,2.4292,5.2089,1.0,1.4125,0.9242,0.0,9.0042,43.5674,5.5,20.2,42.623

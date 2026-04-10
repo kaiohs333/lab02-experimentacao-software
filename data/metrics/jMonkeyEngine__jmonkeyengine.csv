@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jMonkeyEngine/jmonkeyengine,4175,1165,2014-03-20T22:29:28Z,82,2509,135977,4.0,6.5636,7.2039,1.0,1.4472,0.7316,1.0,68.6907,450.743,33.0,78.0598,139.0459

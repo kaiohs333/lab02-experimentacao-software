@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+material-components/material-components-android,17217,3227,2016-12-05T16:11:29Z,118,2122,47120,4.0,7.1541,8.3849,1.0,1.5386,0.9892,1.0,93.8831,974.4,14.0,56.2582,145.7808

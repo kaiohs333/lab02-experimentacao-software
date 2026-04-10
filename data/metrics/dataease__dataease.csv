@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dataease/dataease,23679,4060,2021-02-02T04:10:21Z,105,1132,6630,3.0,4.9647,7.5326,1.0,1.2058,0.6774,0.0,28.4488,184.941,9.0,39.6846,124.9053

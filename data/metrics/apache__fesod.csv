@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/fesod,5899,489,2024-10-05T11:42:50Z,7,616,23275,5.0,6.0049,5.744,1.0,1.3685,0.7997,1.0,30.2744,339.9789,15.0,36.2305,59.2366

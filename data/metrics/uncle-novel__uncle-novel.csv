@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+uncle-novel/uncle-novel,3846,541,2018-12-11T12:15:30Z,1,269,6709,5.0,7.29,8.7714,1.0,1.658,0.8476,0.0,10.4164,35.7156,26.0,63.1636,248.7425

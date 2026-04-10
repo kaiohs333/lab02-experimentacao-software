@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+zaproxy/zaproxy,14913,2529,2015-06-03T16:55:01Z,24,2385,75823,3.0,4.5866,5.6209,1.0,1.956,1.9337,1.0,70.9199,358.625,24.0,71.8646,138.3949

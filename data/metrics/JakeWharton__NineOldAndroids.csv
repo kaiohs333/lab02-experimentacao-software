@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JakeWharton/NineOldAndroids,4472,1523,2011-12-08T19:46:37Z,0,138,3931,2.0,4.2899,4.3584,1.0,1.4348,0.7144,0.0,30.1449,108.072,11.0,54.9638,96.9361

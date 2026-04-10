@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/incubator-seata,25966,8891,2018-12-28T08:37:22Z,45,4178,109876,4.0,6.4993,20.7691,1.0,1.7638,14.1004,2.0,459.5326,14690.5609,25.0,66.8736,1026.3719

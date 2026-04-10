@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+codecentric/spring-boot-admin,12824,3117,2014-07-25T11:39:13Z,147,462,7313,6.0,7.7619,6.1273,1.0,1.2879,0.6825,0.0,7.2121,27.6672,17.0,30.2944,36.1547

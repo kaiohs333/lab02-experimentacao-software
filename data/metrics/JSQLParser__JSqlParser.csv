@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JSQLParser/JSqlParser,5936,1418,2011-06-23T22:51:52Z,37,878,11593,4.0,6.2016,13.5199,1.0,1.5592,1.0421,1.0,507.6276,8154.8494,24.0,58.3975,167.572

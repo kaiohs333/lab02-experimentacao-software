@@ -1,0 +1,18 @@
+package com.alibaba.druid.bvt.sql.odps;
+
+import com.alibaba.druid.sql.SQLUtils;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OdpsFormatCommentTest23 {
+    @Test
+    public void test_drop_table() throws Exception {
+        String sql = "-- xxx"
+                + "\n -- yyy"
+                + "\ndrop table if exists mytables;";
+        assertEquals("-- xxx"
+                + "\n-- yyy"
+                + "\nDROP TABLE IF EXISTS mytables;", SQLUtils.formatOdps(sql));
+    }
+}

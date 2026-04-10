@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bitcoin-wallet/bitcoin-wallet,4113,2274,2012-03-31T17:06:47Z,0,387,3339,4.0,7.5323,9.7776,1.0,1.7132,1.1211,0.0,5.4134,21.7512,19.0,47.491,85.1318

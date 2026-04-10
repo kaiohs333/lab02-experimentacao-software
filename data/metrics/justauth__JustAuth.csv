@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+justauth/JustAuth,17415,2852,2019-01-31T09:42:20Z,46,198,3354,2.0,5.5101,6.0318,1.0,1.3434,0.5816,6.0,12.9848,19.532,17.0,30.5758,64.9765

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+failsafe-lib/failsafe,4307,309,2015-06-30T00:56:39Z,0,238,7063,6.0,6.3866,5.3543,1.0,2.063,1.743,1.0,19.1765,56.3786,22.5,42.1261,51.9177

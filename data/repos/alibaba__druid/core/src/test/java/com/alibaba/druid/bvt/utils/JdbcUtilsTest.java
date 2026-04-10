@@ -1,0 +1,99 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.utils;
+
+import com.alibaba.druid.mock.MockConnection;
+import com.alibaba.druid.mock.MockStatement;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.util.JdbcUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.sql.SQLException;
+import java.sql.SQLRecoverableException;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class JdbcUtilsTest {
+    private DruidDataSource dataSource;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        dataSource = new DruidDataSource();
+        dataSource.setMinIdle(1);
+        dataSource.setUrl("jdbc:h2:mem:test;");
+        dataSource.setTestOnBorrow(false);
+
+        JdbcUtils.execute(dataSource, "CREATE TABLE user (id INT, name VARCHAR(40))");
+    }
+
+    @AfterEach
+    protected void tearDown() throws Exception {
+        JdbcUtils.execute(dataSource, "DROP TABLE user");
+        JdbcUtils.close(dataSource);
+    }
+
+    @Test
+    public void test_curd() throws Exception {
+        {
+            List<Map<String, Object>> list = JdbcUtils.executeQuery(dataSource, "select * from user");
+            assertEquals(0, list.size());
+        }
+        {
+            Map<String, Object> data = new LinkedHashMap<String, Object>();
+            data.put("id", 123);
+            data.put("name", "高傲的羊");
+            JdbcUtils.insertToTable(dataSource, "user", data);
+        }
+        {
+            List<Map<String, Object>> list = JdbcUtils.executeQuery(dataSource, "select * from user");
+            assertEquals(1, list.size());
+            Map<String, Object> data = list.get(0);
+
+            assertEquals(123, data.get("ID"));
+            assertEquals("高傲的羊", data.get("NAME"));
+        }
+        {
+            List<Map<String, Object>> list = JdbcUtils.executeQuery(dataSource, "select id \"id\", name \"name\" from user");
+            assertEquals(1, list.size());
+            Map<String, Object> data = list.get(0);
+
+            assertEquals(123, data.get("id"));
+            assertEquals("高傲的羊", data.get("name"));
+        }
+        {
+            JdbcUtils.executeUpdate(dataSource, "delete from user");
+        }
+        {
+            List<Map<String, Object>> list = JdbcUtils.executeQuery(dataSource, "select * from user");
+            assertEquals(0, list.size());
+        }
+    }
+
+    @Test
+    public void test_close() throws Exception {
+        MockStatement stmt = new MockStatement(new MockConnection()) {
+            public void close() throws SQLException {
+                throw new SQLRecoverableException("Closed Connection");
+            }
+        };
+        JdbcUtils.close(stmt);
+    }
+}

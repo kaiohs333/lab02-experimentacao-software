@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+evant/gradle-retrolambda,5283,442,2013-08-05T02:09:58Z,37,25,75,3.0,4.6,3.6056,1.0,1.04,0.2,0.0,2.16,9.0078,13.0,24.92,28.8746

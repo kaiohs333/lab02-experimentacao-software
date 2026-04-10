@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+fabric8io/kubernetes-client,3637,1507,2015-07-09T15:43:13Z,131,8015,199613,30.0,21.9155,13.9572,1.0,1.1152,0.473,37.0,85.8893,565.6314,39.0,47.7421,47.7279

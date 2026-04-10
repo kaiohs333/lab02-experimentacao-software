@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+datahub-project/datahub,11724,3407,2015-11-18T05:47:40Z,135,4196,57833,9.0,11.2927,12.8385,1.0,1.209,0.5756,1.0,21.8644,110.5338,30.0,65.5713,105.7935

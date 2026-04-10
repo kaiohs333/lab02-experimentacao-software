@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+lightbend/config,6296,979,2011-12-06T08:02:29Z,4,200,4828,3.0,5.485,7.1572,1.0,2.055,4.3735,0.0,76.245,399.3429,17.0,66.185,125.6713

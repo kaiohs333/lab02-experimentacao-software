@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/freeline,5464,621,2016-08-03T17:22:52Z,22,135,768,2.0,3.7037,4.681,1.0,1.6074,1.5067,1.0,13.8667,63.5368,16.0,39.6815,61.8178

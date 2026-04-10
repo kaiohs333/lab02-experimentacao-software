@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/maestro,3742,268,2024-04-17T01:15:56Z,0,1125,18692,6.0,8.44,8.1341,1.0,1.6044,0.8772,0.0,27.3724,367.2365,18.0,51.8658,137.4447

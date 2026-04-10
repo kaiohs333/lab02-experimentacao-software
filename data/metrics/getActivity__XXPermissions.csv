@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+getActivity/XXPermissions,6708,891,2018-06-15T14:31:29Z,74,161,3888,5.0,7.4224,7.1691,1.0,1.6708,0.9472,1.0,105.3043,973.2177,16.0,53.5714,115.5823

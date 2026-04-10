@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spotbugs/spotbugs,3843,652,2016-11-04T22:18:08Z,73,5342,72093,1.0,3.2726,6.7958,1.0,1.3937,0.9213,0.0,25.6831,366.0095,14.0,41.2634,191.7425

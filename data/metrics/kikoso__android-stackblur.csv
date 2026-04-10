@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+kikoso/android-stackblur,3582,648,2013-08-15T14:44:32Z,0,41,221,0.0,1.7805,3.8504,1.0,1.0976,0.3745,0.0,0.5854,1.897,5.0,22.7561,41.2849

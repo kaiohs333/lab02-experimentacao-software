@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-attic/spring-security-oauth,4700,3978,2011-07-26T18:08:49Z,0,999,17370,4.0,6.1552,6.4725,1.0,1.6396,1.7012,0.0,13.4094,72.7785,14.0,35.2923,55.1599

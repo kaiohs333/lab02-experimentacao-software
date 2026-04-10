@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+line/armeria,5085,985,2015-11-16T04:04:01Z,269,6821,136236,5.0,6.4111,6.4585,1.0,1.317,0.8546,0.0,32.6581,258.3896,18.0,46.001,79.0233

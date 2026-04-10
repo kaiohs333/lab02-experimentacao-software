@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+kevin-wayne/algs4,7523,2676,2015-08-31T09:28:49Z,0,279,28680,4.0,4.0036,2.5068,1.0,1.0215,0.1683,0.0,47.4695,263.5181,57.0,80.724,96.449

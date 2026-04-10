@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/rejoiner,3664,135,2017-12-06T19:09:53Z,3,131,1336,5.0,6.6183,6.2196,1.0,1.5725,1.0454,0.0,4.9237,14.935,12.0,27.2214,39.2909

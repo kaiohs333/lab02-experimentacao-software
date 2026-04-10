@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+markzhai/AndroidPerformanceMonitor,6733,1019,2016-01-17T05:23:22Z,0,54,643,3.0,4.0741,3.9423,1.0,1.2778,0.529,0.0,14.0741,37.2492,19.5,41.3704,54.3307

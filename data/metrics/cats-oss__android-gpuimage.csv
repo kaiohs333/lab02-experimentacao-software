@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cats-oss/android-gpuimage,9157,2305,2012-10-04T08:11:58Z,0,153,2608,2.0,2.9608,3.7485,2.0,2.1569,1.1927,0.0,11.3007,54.176,16.0,41.4444,102.8688

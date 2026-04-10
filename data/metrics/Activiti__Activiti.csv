@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Activiti/Activiti,10522,6942,2012-09-13T11:34:43Z,1000,3428,73137,4.0,5.7313,8.6045,1.0,1.5788,1.0013,1.0,89.4641,1567.7802,19.0,46.0878,108.0982

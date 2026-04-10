@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bepass-org/oblivion,4682,631,2024-02-08T05:50:09Z,12,58,264,4.0,5.6379,6.037,1.0,1.4828,0.7069,0.5,11.6207,46.8191,14.5,45.5345,86.4241

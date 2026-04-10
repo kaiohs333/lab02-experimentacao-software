@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jgilfelt/chuck,4686,455,2017-02-07T23:51:39Z,5,42,422,4.0,5.9048,6.5846,1.0,1.381,0.6608,0.5,55.7381,281.5484,17.5,40.4286,55.0814

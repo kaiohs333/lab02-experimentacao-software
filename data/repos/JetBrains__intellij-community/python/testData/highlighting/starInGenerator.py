@@ -1,0 +1,1 @@
+y = (<error descr="Cannot use starred expression here">*()</error> for _ in ())

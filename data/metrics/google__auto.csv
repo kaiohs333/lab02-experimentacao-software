@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/auto,10557,1211,2013-05-22T21:41:56Z,67,1149,10994,3.0,4.1218,8.624,1.0,1.7137,3.2488,1.0,25.9426,270.6484,8.0,28.2489,96.9048

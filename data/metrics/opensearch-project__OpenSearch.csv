@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+opensearch-project/OpenSearch,12647,2481,2021-01-29T22:10:00Z,65,19818,461664,5.0,7.4535,9.9878,1.0,1.7241,1.5104,1.0,39.6797,454.6978,24.0,67.732,147.6167

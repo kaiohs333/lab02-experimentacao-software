@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+pytorch/serve,4360,887,2019-10-03T03:17:43Z,24,251,1445,3.0,5.8008,7.2636,1.0,1.4661,0.8999,3.0,63.9163,327.6654,35.0,74.6892,130.7155

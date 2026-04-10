@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+code4craft/netty-learning,3554,1186,2013-09-19T02:24:25Z,0,1164,40495,4.0,5.0172,4.7016,1.0,1.6641,1.1543,1.0,39.2491,377.9788,20.0,59.0713,132.4503

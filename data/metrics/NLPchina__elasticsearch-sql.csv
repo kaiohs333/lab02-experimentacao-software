@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+NLPchina/elasticsearch-sql,7023,1533,2014-08-24T14:26:31Z,302,277,3925,6.0,9.5812,19.7216,1.0,2.0794,1.4991,1.0,189.5235,1270.1838,39.0,119.1661,474.4617

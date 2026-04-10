@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+square/sqlbrite,4537,412,2015-02-19T04:38:37Z,9,106,1070,2.0,4.6981,5.8784,1.0,1.3585,0.7708,0.0,4.3019,27.9415,9.0,31.4057,76.1778

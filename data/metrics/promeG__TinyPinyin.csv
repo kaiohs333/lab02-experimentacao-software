@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+promeG/TinyPinyin,3938,495,2015-09-30T03:24:50Z,2,65,269,1.0,2.0308,2.8884,1.0,1.0923,0.3411,0.0,8.7538,57.7987,7.0,21.5538,43.532

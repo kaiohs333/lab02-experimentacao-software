@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+lukas-krecan/ShedLock,4121,563,2016-12-11T13:53:59Z,0,430,5184,5.0,6.0558,4.6597,2.0,2.1186,1.9806,0.0,7.6744,26.5634,19.0,30.086,30.6513

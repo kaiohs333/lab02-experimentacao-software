@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mybatis/mybatis-3,20401,12944,2013-02-14T19:03:32Z,46,1756,28485,2.0,3.582,4.9354,1.0,1.2153,0.6871,0.0,21.2711,249.0783,16.0,34.7762,71.6838

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+codingapi/tx-lcn,4182,1447,2017-11-11T03:34:34Z,14,222,2790,4.0,4.9865,4.0467,1.0,1.2117,0.6276,0.0,6.3378,43.4378,12.0,35.0541,115.1412

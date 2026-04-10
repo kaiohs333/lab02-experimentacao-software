@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+doocs/leetcode,35825,9380,2018-09-16T14:03:03Z,21,172,6527,2.0,2.7326,2.0025,1.0,1.0058,0.0762,0.0,0.436,1.2894,24.0,27.8081,17.6676

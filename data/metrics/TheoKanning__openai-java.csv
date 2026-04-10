@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+TheoKanning/openai-java,4763,1202,2020-09-15T02:58:52Z,22,165,1847,4.0,5.3879,8.2341,1.0,1.0848,0.373,0.0,15.5515,182.8752,7.0,16.8667,35.6228

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+DataLinkDC/dinky,3713,1327,2021-06-09T07:11:26Z,32,1368,45530,5.0,6.9605,7.791,1.0,1.3246,0.6411,0.0,24.4225,102.3874,20.0,44.5534,81.9147

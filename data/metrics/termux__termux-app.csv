@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+termux/termux-app,52518,6283,2015-10-23T09:42:46Z,95,321,11304,4.0,5.9128,7.1871,1.0,1.4299,0.7042,0.0,60.8255,236.3712,31.0,76.5202,153.4689

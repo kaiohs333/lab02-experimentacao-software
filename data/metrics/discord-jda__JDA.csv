@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+discord-jda/JDA,4650,761,2015-12-12T13:57:32Z,121,1437,94304,6.0,8.7314,12.4296,1.0,1.8406,1.21,3.0,129.1218,1324.9826,23.0,50.6521,101.0908

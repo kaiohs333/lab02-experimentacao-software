@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+allure-framework/allure2,5320,762,2016-05-27T14:06:05Z,84,289,5395,4.0,5.9654,5.6831,1.0,1.3045,0.7888,1.0,13.7716,52.8655,14.0,37.1419,88.8926

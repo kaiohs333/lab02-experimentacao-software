@@ -1,0 +1,2 @@
+version = "2026.*"
+upstream_repository = "https://github.com/python/tzdata"

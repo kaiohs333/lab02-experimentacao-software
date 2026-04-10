@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+microsoft/malmo,4253,607,2016-05-17T14:58:40Z,21,278,5416,5.0,7.0504,7.3547,2.0,2.1439,2.7166,1.0,12.8489,30.4034,32.5,68.8129,131.7836

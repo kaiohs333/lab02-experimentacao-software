@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/ExoPlayer,21936,6014,2014-06-13T21:19:18Z,28,3281,124900,5.0,7.5392,8.8322,1.0,1.2923,1.0098,0.0,52.2201,493.1386,25.0,79.9598,207.3708

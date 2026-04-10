@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+tbruyelle/RxPermissions,10441,1384,2015-09-29T13:55:09Z,11,20,113,2.0,4.65,5.6687,1.0,1.1,0.3078,0.0,10.1,33.5244,11.5,43.8,87.9878

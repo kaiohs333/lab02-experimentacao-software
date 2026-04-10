@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+blossom-editor/blossom,3795,342,2023-08-07T03:02:17Z,19,435,10553,3.0,5.7241,6.5064,1.0,1.3448,0.6725,0.0,6.977,26.8203,13.0,30.7241,45.4985

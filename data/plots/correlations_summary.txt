@@ -1,0 +1,29 @@
+# Resumo das Correlações de Spearman
+
+## RQ01 — Popularidade vs Qualidade
+### Estrelas
+- **CBO (mediana)**: ρ=0.0296, p=0.356992
+- **DIT (mediana)**: ρ=-0.0391, p=0.223212
+- **LCOM (mediana)**: ρ=0.0076, p=0.812902
+
+## RQ02 — Maturidade vs Qualidade
+### Idade (anos)
+- **CBO (mediana)**: ρ=0.0196, p=0.541308
+- **DIT (mediana)**: ρ=0.0982, p=0.002193 *SIGNIFICATIVO*
+- **LCOM (mediana)**: ρ=0.0906, p=0.004727 *SIGNIFICATIVO*
+
+## RQ03 — Atividade vs Qualidade
+### Nº de Releases
+- **CBO (mediana)**: ρ=0.2871, p=0.0 *SIGNIFICATIVO*
+- **DIT (mediana)**: ρ=-0.053, p=0.099286
+- **LCOM (mediana)**: ρ=0.1154, p=0.000316 *SIGNIFICATIVO*
+
+## RQ04 — Tamanho vs Qualidade
+### LOC (mediana)
+- **CBO (mediana)**: ρ=0.4292, p=0.0 *SIGNIFICATIVO*
+- **DIT (mediana)**: ρ=0.1322, p=3.6e-05 *SIGNIFICATIVO*
+- **LCOM (mediana)**: ρ=0.5491, p=0.0 *SIGNIFICATIVO*
+### Linhas de Comentário
+- **CBO (mediana)**: ρ=0.3051, p=0.0 *SIGNIFICATIVO*
+- **DIT (mediana)**: ρ=-0.0479, p=0.135787
+- **LCOM (mediana)**: ρ=0.1277, p=6.6e-05 *SIGNIFICATIVO*

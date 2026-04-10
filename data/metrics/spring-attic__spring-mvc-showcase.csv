@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-attic/spring-mvc-showcase,4985,3654,2011-06-03T15:36:55Z,0,58,47,5.0,5.1724,3.6856,1.0,1.2069,0.4495,0.0,9.4483,23.8682,18.0,22.0862,19.0247

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+yangfuhai/ASimpleCache,3666,1232,2013-07-28T13:50:59Z,0,29,805,2.0,4.5862,5.7041,1.0,1.3103,0.4708,0.0,38.5172,109.5033,30.0,68.7241,129.5484

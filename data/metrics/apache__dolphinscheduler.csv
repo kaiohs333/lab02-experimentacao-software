@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/dolphinscheduler,14203,5011,2019-03-01T16:39:25Z,56,2732,58806,5.0,6.597,6.4866,1.0,1.3763,0.6881,0.0,9.8946,49.8069,14.0,34.996,63.2289

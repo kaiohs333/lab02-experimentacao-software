@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ant-media/Ant-Media-Server,4653,681,2017-03-01T08:21:13Z,68,1191,45035,2.0,5.6776,9.4087,1.0,1.3266,0.7287,1.0,164.1713,2127.8694,19.0,89.403,259.2993

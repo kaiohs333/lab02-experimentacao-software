@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/hadoop,15511,9205,2014-08-28T07:00:08Z,0,21988,650460,4.0,7.4526,11.4004,1.0,1.6132,1.4589,0.0,70.3452,941.3438,23.0,76.0775,218.9865

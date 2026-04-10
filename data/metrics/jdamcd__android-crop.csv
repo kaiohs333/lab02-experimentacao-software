@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jdamcd/android-crop,4535,1071,2014-03-13T10:24:43Z,6,31,327,1.0,4.2903,5.5629,1.0,1.3871,0.6672,0.0,26.4839,80.4342,10.0,54.0645,88.4198

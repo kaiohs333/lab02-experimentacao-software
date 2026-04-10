@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/streampark,4301,1065,2019-05-27T05:56:03Z,17,561,13402,5.0,7.4759,7.7138,1.0,1.2816,0.6457,0.0,18.9554,71.4986,20.0,42.3102,69.2174

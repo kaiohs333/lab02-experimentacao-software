@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+paascloud/paascloud-master,9886,4259,2018-03-17T05:40:43Z,0,744,23194,4.0,6.0027,5.8671,1.0,1.336,0.6182,0.0,5.4435,25.5841,11.0,22.1613,39.7589

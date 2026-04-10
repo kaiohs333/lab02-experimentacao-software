@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bumptech/glide,35031,6183,2013-07-08T22:52:33Z,54,1523,15541,4.0,5.9304,6.4833,1.0,1.2344,0.7923,0.0,20.0926,159.3098,13.0,39.9002,75.535

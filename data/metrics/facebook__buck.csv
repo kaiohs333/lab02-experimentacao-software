@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+facebook/buck,8562,1133,2013-04-17T18:12:18Z,57,10752,190652,5.0,7.0869,8.7046,1.0,1.3606,0.9384,1.0,26.1966,225.2111,18.0,46.8403,97.0347

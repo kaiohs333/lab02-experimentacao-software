@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+grantland/android-autofittextview,4263,689,2011-02-14T06:00:52Z,1,8,235,4.0,5.375,5.153,1.0,1.375,0.5175,1.5,40.75,107.6711,15.0,58.75,99.9168

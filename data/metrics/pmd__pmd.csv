@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+pmd/pmd,5357,1558,2012-07-11T18:03:00Z,113,4114,53707,4.0,5.6738,8.4489,2.0,2.043,2.557,1.0,43.64,590.6266,13.0,36.0685,150.7809

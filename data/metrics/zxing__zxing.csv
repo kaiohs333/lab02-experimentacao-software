@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+zxing/zxing,33901,9434,2011-10-12T14:07:27Z,32,599,18077,4.0,5.0367,4.8082,2.0,1.7129,0.8205,0.0,22.8114,130.435,31.0,67.1436,93.1328

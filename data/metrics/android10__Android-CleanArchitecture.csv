@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+android10/Android-CleanArchitecture,15561,3288,2014-08-19T14:09:26Z,0,105,1715,4.0,5.1429,4.6708,1.0,1.4286,0.7052,1.0,6.7238,23.2178,13.0,21.5238,27.0896

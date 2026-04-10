@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+castorflex/SmoothProgressBar,4515,1002,2013-11-27T20:32:16Z,9,48,110,3.0,4.8542,5.0021,1.0,1.2292,0.4722,0.0,26.3125,95.3393,12.5,46.0,95.3453

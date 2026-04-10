@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Team-xManager/xManager,12185,318,2021-02-08T11:31:10Z,51,524,1,2.0,2.0172,2.6042,1.0,1.021,0.2426,0.0,4.7328,69.899,7.0,41.645,523.9369

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+deepjavalibrary/djl,4794,744,2019-10-29T22:38:54Z,38,1669,59962,5.0,6.5734,5.5807,1.0,1.4865,1.0316,3.0,132.8203,1686.7306,31.0,58.1084,91.0835

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+databricks/learning-spark,3900,2410,2014-06-16T04:47:54Z,0,133,213,2.0,2.8271,3.4543,1.0,1.015,0.1222,0.0,1.797,12.0917,7.0,17.2556,24.1129

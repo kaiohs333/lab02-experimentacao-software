@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+springdoc/springdoc-openapi,3689,588,2019-07-11T23:08:20Z,103,3782,137482,3.0,3.95,4.8063,1.0,1.3329,0.657,0.0,9.0973,105.6165,6.0,14.4841,34.0439

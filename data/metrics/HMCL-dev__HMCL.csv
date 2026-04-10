@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+HMCL-dev/HMCL,9010,846,2015-06-22T08:06:03Z,317,1588,22288,4.0,6.7783,8.0905,1.0,1.7078,1.5158,1.0,35.4868,337.5678,26.0,61.3533,96.2432

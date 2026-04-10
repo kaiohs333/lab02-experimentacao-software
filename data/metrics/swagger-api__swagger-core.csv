@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+swagger-api/swagger-core,7522,2248,2011-07-05T23:44:11Z,129,1622,6402,3.0,4.6202,6.7571,1.0,1.2269,0.6335,0.0,49.7719,735.3306,8.0,28.9612,117.9471

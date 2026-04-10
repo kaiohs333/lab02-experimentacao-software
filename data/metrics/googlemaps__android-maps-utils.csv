@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+googlemaps/android-maps-utils,3602,1543,2013-05-17T00:08:48Z,63,218,7370,5.0,7.0138,6.9743,1.0,1.6743,0.9354,1.0,37.9083,148.0036,38.0,63.9725,103.6108

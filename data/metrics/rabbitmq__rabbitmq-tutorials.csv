@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+rabbitmq/rabbitmq-tutorials,6874,3564,2010-09-21T11:41:26Z,0,51,556,5.0,4.8431,2.6935,1.0,1.0,0.0,1.0,2.1961,4.025,21.0,31.0784,51.8235

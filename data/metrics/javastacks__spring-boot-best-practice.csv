@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+javastacks/spring-boot-best-practice,5035,1356,2018-11-09T06:23:18Z,1,195,958,4.0,5.0,3.6425,1.0,1.0923,0.3393,0.0,3.2615,25.6667,8.0,12.2872,13.818

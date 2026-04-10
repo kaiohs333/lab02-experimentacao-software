@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+awaitility/awaitility,4002,257,2010-01-22T15:12:52Z,0,170,3990,1.0,3.1765,4.5591,1.0,1.1941,0.5888,0.0,18.5824,123.7299,13.0,32.1941,51.2621

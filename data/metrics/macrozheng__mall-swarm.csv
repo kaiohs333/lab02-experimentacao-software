@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+macrozheng/mall-swarm,12890,5510,2019-11-25T06:55:31Z,3,763,4358,3.0,3.7942,4.7544,1.0,1.232,0.4346,13.0,1107.6789,8139.6475,32.0,133.1599,260.931

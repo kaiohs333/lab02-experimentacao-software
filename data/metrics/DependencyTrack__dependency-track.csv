@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+DependencyTrack/dependency-track,3690,717,2013-07-16T19:16:43Z,75,729,19935,6.0,8.9794,10.2999,1.0,1.5226,0.7318,1.0,112.6667,1544.5507,35.0,83.6776,144.2773

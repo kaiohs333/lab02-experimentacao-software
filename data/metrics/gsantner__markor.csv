@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+gsantner/markor,5323,463,2017-08-26T00:08:35Z,81,344,4566,4.0,6.8547,9.9569,1.0,1.4767,0.9596,1.0,129.5087,999.0848,26.0,87.9215,178.6701

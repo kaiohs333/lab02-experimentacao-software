@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/rocketmq,22388,11991,2016-11-30T08:00:08Z,24,3017,51159,4.0,7.0749,10.7735,1.0,1.3374,0.7553,1.0,136.524,2871.8786,29.0,78.296,165.7229

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+SonarSource/sonarqube,10368,2174,2011-01-05T11:05:17Z,70,8572,176722,4.0,7.2032,8.8267,1.0,1.1603,0.4897,0.0,27.6374,202.7786,26.0,48.9475,75.6452

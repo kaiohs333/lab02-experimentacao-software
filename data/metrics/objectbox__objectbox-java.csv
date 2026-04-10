@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+objectbox/objectbox-java,4599,305,2017-01-24T10:29:48Z,53,396,13150,4.0,5.1389,5.2079,1.0,1.7652,1.8399,0.0,105.6162,492.2215,17.5,62.5202,119.5069

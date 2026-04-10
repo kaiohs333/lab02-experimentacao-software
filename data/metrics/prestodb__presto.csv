@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+prestodb/presto,16667,5534,2012-08-09T01:03:37Z,14,13073,177465,6.0,8.8058,12.3908,1.0,1.3868,0.9642,1.0,85.2712,1604.791,27.0,61.9236,128.7298

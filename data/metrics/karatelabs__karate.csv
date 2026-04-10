@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+karatelabs/karate,8814,2022,2017-02-07T15:59:17Z,57,578,23744,4.0,5.5623,6.034,1.0,1.2007,0.5986,3.0,149.7509,490.57,52.0,114.026,186.7224

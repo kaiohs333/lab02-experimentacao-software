@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+opengoofy/hippo4j,5994,1240,2021-06-16T02:59:48Z,18,1206,29976,3.0,4.5945,4.8882,1.0,1.1824,0.5311,0.0,5.932,25.1773,12.0,25.9701,36.8901

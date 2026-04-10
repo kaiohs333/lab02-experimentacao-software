@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+weibocom/motan,5907,1755,2016-04-20T10:56:17Z,28,844,15311,4.0,5.9739,5.8242,1.0,1.4313,0.8099,1.0,32.718,155.3143,23.0,55.5746,95.2156

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/spring-ai-alibaba,8955,1980,2024-09-09T01:35:50Z,18,2411,57622,4.0,6.2932,7.0389,1.0,1.1937,0.5742,1.0,13.6599,63.1225,20.0,48.0705,77.6142

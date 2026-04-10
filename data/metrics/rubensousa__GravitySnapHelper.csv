@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+rubensousa/GravitySnapHelper,5000,617,2016-08-31T07:25:23Z,15,7,220,6.0,6.8571,6.176,1.0,1.5714,0.7868,1.0,66.0,164.5813,17.0,85.7143,148.327

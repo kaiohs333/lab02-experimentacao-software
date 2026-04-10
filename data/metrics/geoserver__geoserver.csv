@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+geoserver/geoserver,4303,2289,2011-11-10T19:56:06Z,69,11668,175842,5.0,7.4839,8.7807,1.0,1.8025,1.4709,1.0,42.4793,386.6851,25.0,60.3365,113.6622

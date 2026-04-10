@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+RipMeApp/ripme,4063,660,2017-01-06T17:12:09Z,145,320,2645,4.0,5.0125,3.4577,2.0,2.5406,1.2859,4.0,28.2719,94.4155,30.0,62.225,111.1194

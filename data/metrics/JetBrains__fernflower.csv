@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JetBrains/fernflower,4214,724,2014-10-03T05:00:15Z,0,717,3670,1.0,4.0251,6.8172,1.0,1.2357,0.6199,0.0,33.4045,404.8319,14.0,77.4393,205.1244

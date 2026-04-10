@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/QLExpress,5552,1207,2017-03-15T08:39:54Z,25,355,2366,3.0,5.7831,11.17,1.0,1.4,0.6404,2.0,44.0028,330.6198,19.0,38.893,103.215

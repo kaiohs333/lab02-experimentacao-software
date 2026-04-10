@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/druid,13967,3777,2012-10-23T19:08:07Z,71,14999,270620,5.0,7.9217,9.372,1.0,1.3786,1.8177,1.0,62.5205,4491.73,24.0,52.2675,103.7367

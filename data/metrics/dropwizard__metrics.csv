@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dropwizard/metrics,7851,1794,2010-02-26T19:44:42Z,142,732,5156,4.0,5.5355,4.6471,1.0,1.3675,0.8071,0.0,9.1407,38.1976,20.0,41.1038,60.6642

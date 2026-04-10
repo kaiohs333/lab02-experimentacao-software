@@ -1,0 +1,28 @@
+package com.alibaba.druid.bvt.sql.oracle.tomysql;
+
+import com.alibaba.druid.sql.SQLUtils;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OracleToMySql_PageTest1 {
+    @Test
+    public void test_page() throws Exception {
+        String sql = "SELECT *" +
+                "\nFROM (SELECT XX.*, ROWNUM AS RN" +
+                "\n\tFROM (SELECT *" +
+                "\n\t\tFROM t" +
+                "\n\t\tORDER BY id" +
+                "\n\t\t) XX" +
+                "\n\tWHERE ROWNUM <= 20" +
+                "\n\t) XXX" +
+                "\nWHERE RN > 10";
+
+        String mysqlSql = SQLUtils.translateOracleToMySql(sql);
+        assertEquals("SELECT *"//
+                + "\nFROM t"//
+                + "\nORDER BY id"//
+                + "\nLIMIT 10, 10", mysqlSql);
+        System.out.println(mysqlSql);
+    }
+}

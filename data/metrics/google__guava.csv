@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/guava,51507,11158,2014-05-29T16:23:17Z,57,5974,198373,2.0,4.2514,5.7014,1.0,1.8719,2.3655,0.0,51.4325,460.8465,10.0,41.9138,118.6184

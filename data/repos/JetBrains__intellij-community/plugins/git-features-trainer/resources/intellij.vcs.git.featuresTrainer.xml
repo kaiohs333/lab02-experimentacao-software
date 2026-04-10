@@ -1,0 +1,13 @@
+<idea-plugin package="training.git">
+  <dependencies>
+    <!-- region Generated dependencies - run `Generate Product Layouts` to regenerate -->
+    <plugin id="Git4Idea"/>
+    <module name="intellij.platform.vcs.log"/>
+    <module name="intellij.vcs.git.shared"/>
+    <!-- endregion -->
+  </dependencies>
+
+  <extensions defaultExtensionNs="training">
+    <ift.learning.commonCourse key="Git" implementationClass="training.git.GitLearningCourse"/>
+  </extensions>
+</idea-plugin>

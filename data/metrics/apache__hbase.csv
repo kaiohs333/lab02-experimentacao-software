@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/hbase,5581,3393,2014-05-23T07:00:07Z,50,11644,254290,5.0,7.7953,10.5853,1.0,1.4881,1.5773,1.0,70.1673,891.3111,25.0,81.7427,625.16

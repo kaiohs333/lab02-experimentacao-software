@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/zuul,14000,2431,2013-03-13T18:53:57Z,61,520,9617,4.0,6.5635,7.7837,1.0,1.6096,1.0141,1.0,24.9981,138.6323,20.0,43.0923,68.0346

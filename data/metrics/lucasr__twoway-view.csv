@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+lucasr/twoway-view,5218,1008,2013-01-18T20:55:23Z,0,51,414,4.0,6.0784,5.7926,1.0,1.8235,1.2117,1.0,86.5882,429.2928,30.0,72.3137,126.6915

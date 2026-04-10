@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+nayuki/QR-Code-generator,6486,1252,2016-04-15T02:19:41Z,5,19,1650,3.0,3.9474,3.6587,1.0,1.4211,1.2612,1.0,19.5789,26.2897,60.0,95.9474,103.2357

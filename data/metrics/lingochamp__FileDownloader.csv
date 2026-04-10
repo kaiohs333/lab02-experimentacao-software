@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+lingochamp/FileDownloader,11124,2209,2015-12-22T11:17:16Z,65,269,5373,2.0,4.5279,5.4496,1.0,1.6877,2.5036,1.0,42.0149,232.448,18.0,53.4833,88.3618

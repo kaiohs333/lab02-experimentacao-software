@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+immutables/immutables,3548,293,2013-07-07T13:48:23Z,21,2787,26322,3.0,4.6606,5.0685,1.0,1.2878,1.1526,0.0,30.7194,564.4297,7.0,25.9444,71.1657

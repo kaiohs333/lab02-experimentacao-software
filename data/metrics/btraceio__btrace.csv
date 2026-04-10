@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+btraceio/btrace,5987,960,2014-08-28T18:58:24Z,33,905,21830,4.0,4.7845,5.369,1.0,1.3304,0.8751,0.0,80.3801,1319.2321,13.0,58.768,162.4791

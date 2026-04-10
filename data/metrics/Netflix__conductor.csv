@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/conductor,12788,2331,2016-12-07T22:48:42Z,319,664,13646,5.0,7.4639,8.2124,1.0,1.25,0.5527,0.0,78.6747,646.6733,28.0,70.8614,143.4553

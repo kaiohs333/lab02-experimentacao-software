@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alipay/SoloPi,6147,1247,2019-03-14T15:32:49Z,8,1170,13969,2.0,4.6231,6.6748,1.0,1.206,0.6496,0.0,13.1359,70.3419,13.0,48.1427,113.1681

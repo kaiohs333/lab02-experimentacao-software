@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/pinot,6050,1459,2014-05-19T23:27:48Z,21,7532,202100,5.0,7.3602,8.4238,1.0,1.4834,1.2055,1.0,57.4404,490.0929,34.0,83.1621,156.778

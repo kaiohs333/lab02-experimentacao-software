@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ReactiveX/RxJava,48466,7601,2013-01-08T20:11:48Z,257,11897,82662,1.0,2.3219,5.1347,1.0,1.3181,0.8856,0.0,47.8836,1822.9146,5.0,31.3808,103.8501

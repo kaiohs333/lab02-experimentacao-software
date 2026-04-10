@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+aeron-io/aeron,8532,1016,2014-02-07T17:16:58Z,139,1348,52121,4.0,7.9384,10.0796,1.0,1.2819,0.8637,0.0,119.1083,1333.8179,33.5,94.4963,197.6989

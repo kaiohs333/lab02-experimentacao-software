@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+react-native-image-picker/react-native-image-picker,8637,2086,2015-06-08T20:25:31Z,142,11,53,4.0,6.1818,6.4315,2.0,1.5455,0.5222,1.0,66.1818,211.2401,21.0,74.3636,132.3845

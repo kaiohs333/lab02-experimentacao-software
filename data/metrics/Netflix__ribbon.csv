@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/ribbon,4617,1237,2013-01-15T01:08:04Z,41,710,7475,2.0,4.3873,5.9734,1.0,1.2662,0.662,0.0,13.3775,99.9267,10.0,30.6873,59.1156

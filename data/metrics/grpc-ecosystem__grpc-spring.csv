@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+grpc-ecosystem/grpc-spring,3706,864,2016-12-30T09:06:15Z,34,418,9580,6.0,6.6053,5.2492,1.0,1.4785,1.1467,0.0,5.3684,24.049,13.0,25.7225,35.359

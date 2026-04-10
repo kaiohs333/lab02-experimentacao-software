@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dromara/dynamic-tp,4753,856,2022-01-07T16:35:27Z,19,566,17029,4.0,4.8216,4.3451,1.0,1.2862,0.662,0.0,17.742,138.7989,15.0,32.6466,77.5051

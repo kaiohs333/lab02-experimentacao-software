@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+rockerhieu/emojicon,3608,813,2014-01-18T12:32:38Z,2,39,557,4.0,5.1538,5.2392,1.0,1.5641,0.7879,0.0,6.7692,12.9847,13.0,76.1795,261.0418

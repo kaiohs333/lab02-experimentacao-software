@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+enso-org/enso,7437,337,2016-12-16T17:23:37Z,708,2749,25361,5.0,6.4507,6.7102,1.0,1.6573,1.2883,1.0,36.5657,351.0661,23.0,47.227,76.0627

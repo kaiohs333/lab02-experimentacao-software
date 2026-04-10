@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/incubator-heron,3687,582,2015-09-25T16:09:24Z,56,1676,43927,4.0,5.5626,5.9852,1.0,1.435,0.8457,1.0,20.4033,185.0025,19.0,41.7416,59.3181

@@ -1,0 +1,77 @@
+package com.alibaba.druid.bvt.pool.exception;
+
+import com.alibaba.druid.mock.MockConnection;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.DruidPooledConnection;
+import com.alibaba.druid.pool.vendor.OracleExceptionSorter;
+import com.alibaba.druid.stat.JdbcStatManager;
+import com.alibaba.druid.test.util.OracleMockDriver;
+import com.alibaba.druid.util.JdbcUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OracleExceptionSorterTest_closeConn_3 {
+    private DruidDataSource dataSource;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        JdbcStatManager.getInstance().reset();
+        dataSource = new DruidDataSource();
+
+        dataSource.setExceptionSorter(new OracleExceptionSorter());
+
+        dataSource.setDriver(new OracleMockDriver());
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setPoolPreparedStatements(true);
+        dataSource.setMaxOpenPreparedStatements(100);
+    }
+
+        @AfterEach
+    protected void tearDown() throws Exception {
+        JdbcUtils.close(dataSource);
+    }
+
+    @Test
+    public void test_connect() throws Exception {
+        String sql = "SELECT 1";
+        {
+            DruidPooledConnection conn = dataSource.getConnection();
+
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.execute();
+            pstmt.close();
+            conn.close();
+
+            assertEquals(0, dataSource.getActiveCount());
+            assertEquals(1, dataSource.getPoolingCount());
+            assertEquals(1, dataSource.getCreateCount());
+        }
+
+        DruidPooledConnection conn = dataSource.getConnection();
+        MockConnection mockConn = conn.unwrap(MockConnection.class);
+        assertNotNull(mockConn);
+
+        conn.setAutoCommit(false);
+        conn.setReadOnly(false);
+
+        SQLException exception = new SQLException("xx", "xxx", 28);
+        mockConn.setError(exception);
+
+        conn.close();
+
+        {
+            Connection conn2 = dataSource.getConnection();
+            conn2.close();
+        }
+        assertEquals(0, dataSource.getActiveCount());
+        assertEquals(1, dataSource.getPoolingCount());
+        assertEquals(2, dataSource.getCreateCount());
+    }
+}

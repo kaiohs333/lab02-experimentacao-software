@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+hibernate/hibernate-orm,6464,3742,2010-10-04T16:15:52Z,167,26455,255168,5.0,6.9345,9.1276,1.0,1.3411,0.9395,1.0,75.027,2192.7118,19.0,41.6518,104.8969

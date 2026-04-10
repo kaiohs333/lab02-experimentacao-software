@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+elastic/logstash,14816,3502,2010-11-18T01:31:50Z,238,933,16267,4.0,5.4212,5.6699,1.0,1.6206,2.1182,1.0,21.5734,106.0436,23.0,47.0654,74.8373

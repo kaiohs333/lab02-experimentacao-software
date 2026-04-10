@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/dubbo-spring-boot-project,5397,1863,2018-01-18T12:10:50Z,13,89,2154,6.0,7.0899,5.0105,1.0,1.1685,0.3765,0.0,11.9213,71.1367,14.0,21.2921,25.8049

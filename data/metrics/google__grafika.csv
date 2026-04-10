@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/grafika,6160,1478,2013-12-19T18:36:53Z,1,103,4562,5.0,6.4078,6.2801,2.0,1.7476,0.86,0.0,6.8932,16.8871,60.0,97.4272,114.406

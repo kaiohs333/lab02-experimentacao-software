@@ -1,0 +1,59 @@
+package com.alibaba.druid.bvt.filter;
+
+import com.alibaba.druid.filter.Filter;
+import com.alibaba.druid.filter.FilterAdapter;
+import com.alibaba.druid.filter.FilterManager;
+import org.junit.jupiter.api.Test;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class FilterManagerTest {
+    static {
+        ClassLoader current = Thread.currentThread().getContextClassLoader();
+        try {
+            Thread.currentThread().setContextClassLoader(null);
+
+            assertNotNull(FilterManager.getFilter("stat"));
+        } finally {
+            Thread.currentThread().setContextClassLoader(current);
+        }
+    }
+
+    @Test
+    public void test_instance() throws Exception {
+        new FilterManager();
+    }
+
+    @Test
+    public void test_loadFilter() throws Exception {
+        Exception error = null;
+
+        try {
+            FilterManager.loadFilter(new ArrayList<Filter>(), ErrorFilter.class.getName());
+        } catch (SQLException e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+
+    @Test
+    public void test_loadFilter_2() throws Exception {
+        Exception error = null;
+
+        try {
+            FilterManager.loadFilter(new ArrayList<Filter>(), ErrorFilter.class.getName());
+        } catch (SQLException e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+
+    public static class ErrorFilter extends FilterAdapter {
+        public ErrorFilter() {
+            throw new RuntimeException();
+        }
+    }
+}

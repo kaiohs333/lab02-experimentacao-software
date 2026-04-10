@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ben-manes/caffeine,17573,1683,2014-12-13T08:45:11Z,72,1408,22058,3.0,5.0611,6.8165,1.0,1.5469,1.3906,0.0,166.4339,1805.6922,15.5,64.7344,200.9851

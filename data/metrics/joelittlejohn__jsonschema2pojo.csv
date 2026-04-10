@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+joelittlejohn/jsonschema2pojo,6368,1672,2013-06-22T22:28:53Z,67,267,6551,5.0,6.6367,5.8867,1.0,1.161,0.4984,0.0,46.5393,268.4232,28.0,51.5843,63.0923

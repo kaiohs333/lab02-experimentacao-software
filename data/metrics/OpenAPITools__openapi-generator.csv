@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+OpenAPITools/openapi-generator,26031,7458,2018-05-12T09:57:56Z,79,4316,378180,3.0,4.8851,5.7002,1.0,1.253,0.7522,0.0,86.0065,1141.2828,17.0,58.1951,179.9333

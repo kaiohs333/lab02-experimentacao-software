@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+koush/ion,6264,1027,2013-05-22T07:41:23Z,0,289,2118,3.0,4.5363,6.1101,1.0,1.4602,1.4646,0.0,23.5986,205.83,11.0,32.6747,72.2038

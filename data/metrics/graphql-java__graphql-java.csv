@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+graphql-java/graphql-java,6234,1148,2015-07-06T06:52:20Z,101,1361,16815,5.0,8.1624,10.6306,1.0,1.3483,0.8749,1.0,36.3733,206.1044,21.0,53.734,114.3559

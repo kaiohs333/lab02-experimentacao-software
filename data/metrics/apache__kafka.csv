@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/kafka,32238,15072,2011-08-15T18:06:16Z,0,8873,241239,4.0,7.9697,13.4036,1.0,1.4265,1.0863,0.0,64.9611,1205.1611,27.0,82.0145,227.1838

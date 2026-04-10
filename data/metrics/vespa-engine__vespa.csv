@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+vespa-engine/vespa,6835,700,2016-06-03T20:54:20Z,269,11406,111717,4.0,6.1009,7.4151,1.0,1.6149,1.5296,1.0,40.3772,325.0426,23.0,53.3763,94.3683

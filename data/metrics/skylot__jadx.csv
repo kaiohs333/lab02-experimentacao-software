@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+skylot/jadx,47800,5468,2013-03-18T17:08:21Z,34,3081,8719,3.0,4.4794,6.6217,1.0,1.6939,1.2698,0.0,32.2957,317.3018,18.0,44.9098,95.2543

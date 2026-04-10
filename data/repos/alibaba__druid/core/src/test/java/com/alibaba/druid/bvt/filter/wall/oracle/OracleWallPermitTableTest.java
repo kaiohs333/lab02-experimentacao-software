@@ -1,0 +1,49 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.filter.wall.oracle;
+
+import com.alibaba.druid.wall.WallUtils;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OracleWallPermitTableTest {
+    @Test
+    public void test_permitTable() throws Exception {
+        assertFalse(WallUtils.isValidateOracle("SELECT * FROM T UNION select * from TAB"));
+        assertFalse(WallUtils.isValidateOracle("SELECT * FROM T UNION select * from tab"));
+        assertFalse(WallUtils.isValidateOracle("SELECT * FROM T UNION select * from SYS.TAB"));
+        assertFalse(WallUtils.isValidateOracle("SELECT * FROM T UNION select * from SYS.\"TAB\""));
+
+        assertFalse(WallUtils.isValidateOracle("SELECT * FROM T UNION select * from all_users"));
+    }
+
+    @Test
+    public void test_permitTable_subquery() throws Exception {
+        assertTrue(WallUtils.isValidateOracle("select * from(select * from TAB) a"));
+        assertTrue(WallUtils.isValidateOracle("select * from(select * from tab) a"));
+        assertTrue(WallUtils.isValidateOracle("select * from(select * from SYS.TAB) a"));
+        assertTrue(WallUtils.isValidateOracle("select * from(select * from SYS.\"TAB\") a"));
+    }
+
+    @Test
+    public void test_permitTable_join() throws Exception {
+        assertTrue(WallUtils.isValidateOracle("select * from t1, TAB"));
+        assertTrue(WallUtils.isValidateOracle("select * from t1, tab"));
+        assertTrue(WallUtils.isValidateOracle("select * from t1, SYS.TAB"));
+        assertTrue(WallUtils.isValidateOracle("select * from t1, SYS.\"TAB\""));
+    }
+}

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/iotdb,6301,1129,2018-11-24T21:29:17Z,51,9214,213955,6.0,8.331,14.717,1.0,1.5955,0.9987,1.0,111.5425,2772.4994,35.0,88.3895,217.9786

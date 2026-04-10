@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JanusGraph/janusgraph,5747,1207,2016-12-26T13:26:29Z,28,1896,36506,4.0,6.9024,9.598,1.0,1.4515,0.8728,1.0,43.9536,663.4819,21.0,55.1614,191.5968

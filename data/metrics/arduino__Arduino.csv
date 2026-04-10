@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+arduino/Arduino,14553,6989,2010-09-17T19:10:36Z,37,450,10825,2.0,3.8511,5.7178,1.0,1.6444,1.5617,0.0,32.7222,208.261,18.0,57.3178,136.5657

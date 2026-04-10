@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apple/pkl,11105,364,2024-01-19T17:28:45Z,21,1698,17920,4.0,6.2497,8.1827,3.0,5.6101,22.7317,0.0,29.8563,223.7797,13.0,40.0854,103.8728

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+debezium/debezium,12551,2894,2016-01-22T20:17:05Z,0,3380,64567,5.0,6.8408,7.4988,1.0,1.605,1.0183,1.0,60.2595,564.4482,20.0,64.8148,167.6336

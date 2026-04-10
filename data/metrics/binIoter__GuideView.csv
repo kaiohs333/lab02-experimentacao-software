@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+binIoter/GuideView,3954,655,2016-06-19T08:52:25Z,0,35,358,2.0,3.7429,4.5006,1.0,1.3714,0.7311,1.0,8.2286,35.2755,13.0,35.6,62.7555

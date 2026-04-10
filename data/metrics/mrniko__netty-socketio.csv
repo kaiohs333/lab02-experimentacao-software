@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mrniko/netty-socketio,7025,1673,2012-01-12T11:43:49Z,19,176,2782,3.0,4.8239,6.5315,1.0,1.2557,0.5529,0.0,32.1023,250.0722,15.0,38.3977,61.0204

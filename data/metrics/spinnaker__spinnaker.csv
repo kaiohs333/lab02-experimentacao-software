@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spinnaker/spinnaker,9708,1259,2014-07-02T19:02:36Z,28,8401,116730,5.0,6.6367,6.9082,1.0,1.5071,1.03,0.0,14.0992,213.5312,13.0,29.0827,57.0001

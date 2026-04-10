@@ -1,0 +1,247 @@
+/*
+ * Licensed to Crate.io GmbH ("Crate") under one or more contributor
+ * license agreements.  See the NOTICE file distributed with this work for
+ * additional information regarding copyright ownership.  Crate licenses
+ * this file to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.  You may
+ * obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
+ *
+ * However, if you have executed another commercial license agreement
+ * with Crate these terms will supersede the license and you may use the
+ * software solely pursuant to the terms of the relevant commercial agreement.
+ */
+
+package org.elasticsearch.bootstrap;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.util.Collection;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.Appender;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.appender.ConsoleAppender;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.lucene.util.Constants;
+import org.apache.lucene.util.IOUtils;
+import org.apache.lucene.util.StringHelper;
+import org.elasticsearch.ElasticsearchException;
+import org.elasticsearch.Version;
+import org.elasticsearch.cli.UserException;
+import org.elasticsearch.common.inject.CreationException;
+import org.elasticsearch.common.logging.LogConfigurator;
+import org.elasticsearch.common.logging.Loggers;
+import org.elasticsearch.common.network.IfConfig;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.BoundTransportAddress;
+import org.elasticsearch.discovery.ec2.Ec2DiscoveryPlugin;
+import org.elasticsearch.env.Environment;
+import org.elasticsearch.monitor.jvm.JvmInfo;
+import org.elasticsearch.monitor.os.OsProbe;
+import org.elasticsearch.monitor.process.ProcessProbe;
+import org.elasticsearch.node.Node;
+import org.elasticsearch.node.NodeValidationException;
+import org.elasticsearch.plugin.repository.url.URLRepositoryPlugin;
+import org.elasticsearch.plugins.Plugin;
+import org.elasticsearch.repositories.s3.S3RepositoryPlugin;
+
+import io.crate.bootstrap.BootstrapException;
+import io.crate.ffi.Natives;
+
+public class Bootstrap {
+
+    private static Bootstrap INSTANCE;
+
+    private static final Collection<Class<? extends Plugin>> DEFAULT_PLUGINS = List.of(
+        URLRepositoryPlugin.class,
+        S3RepositoryPlugin.class,
+        Ec2DiscoveryPlugin.class
+    );
+
+    private final Node node;
+    private final CountDownLatch keepAliveLatch = new CountDownLatch(1);
+    private final Thread keepAliveThread;
+
+    /**
+     * creates a new instance
+     */
+    Bootstrap(boolean addShutdownHook, Environment environment) throws BootstrapException {
+        keepAliveThread = new Thread(() -> {
+            try {
+                keepAliveLatch.await();
+            } catch (InterruptedException e) {
+                // bail out
+            }
+        }, "crate[keepAlive/" + Version.CURRENT + "]");
+        keepAliveThread.setDaemon(false);
+        // keep this thread alive (non daemon thread) until we shutdown
+        Runtime.getRuntime().addShutdownHook(new Thread(keepAliveLatch::countDown));
+        setup(addShutdownHook, environment);
+        node = new Node(environment, DEFAULT_PLUGINS) {
+
+            @Override
+            protected void validateNodeBeforeAcceptingRequests(BoundTransportAddress boundTransportAddress,
+                                                               List<BootstrapCheck> bootstrapChecks) throws NodeValidationException {
+                BootstrapChecks.check(environment.settings(), boundTransportAddress, bootstrapChecks);
+            }
+        };
+    }
+
+    /**
+     * initialize native resources
+     */
+    static void initializeNatives(boolean mlockAll) {
+        // check if the user is running as root, and bail
+        if (Natives.definitelyRunningAsRoot()) {
+            throw new RuntimeException("can not run crate as root");
+        }
+
+        // mlockall if requested
+        if (mlockAll && !Constants.WINDOWS) {
+            Natives.tryMlockall();
+        }
+
+        // init lucene random seed. it will use /dev/urandom where available:
+        StringHelper.randomId();
+    }
+
+    static void initializeProbes() {
+        // Force probes to be loaded
+        ProcessProbe.getInstance();
+        OsProbe.getInstance();
+        JvmInfo.jvmInfo();
+    }
+
+    private void setup(boolean addShutdownHook, Environment environment) throws BootstrapException {
+        Settings settings = environment.settings();
+        initializeNatives(BootstrapSettings.MEMORY_LOCK_SETTING.get(settings));
+
+        // initialize probes before the security manager is installed
+        initializeProbes();
+
+        if (addShutdownHook) {
+            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                try {
+                    IOUtils.close(node);
+                    LoggerContext context = (LoggerContext) LogManager.getContext(false);
+                    Configurator.shutdown(context);
+                    if (node != null && node.awaitClose(10, TimeUnit.SECONDS) == false) {
+                        throw new IllegalStateException(
+                            "Node didn't stop within 10 seconds. " +
+                            "Any outstanding requests or tasks might get killed.");
+                    }
+                } catch (IOException ex) {
+                    throw new ElasticsearchException("failed to stop node", ex);
+                } catch (InterruptedException e) {
+                    LogManager.getLogger(Bootstrap.class).warn("Thread got interrupted while waiting for the node to shutdown.");
+                    Thread.currentThread().interrupt();
+                }
+            }));
+        }
+
+        try {
+            // look for jar hell
+            final Logger logger = LogManager.getLogger(JarHell.class);
+            JarHell.checkJarHell(logger::debug);
+        } catch (IOException | URISyntaxException e) {
+            throw new BootstrapException(e);
+        }
+
+        IfConfig.logIfNecessary();
+    }
+
+    private void start() throws NodeValidationException {
+        node.start();
+        keepAliveThread.start();
+    }
+
+    public static void stop() throws IOException {
+        try {
+            IOUtils.close(INSTANCE.node);
+            if (INSTANCE.node.awaitClose(10, TimeUnit.SECONDS) == false) {
+                throw new IllegalStateException("Node didn't stop within 10 seconds. Any outstanding requests or tasks might get killed.");
+            }
+        } catch (InterruptedException e) {
+            LogManager.getLogger(Bootstrap.class).warn("Thread got interrupted while waiting for the node to shutdown.");
+            Thread.currentThread().interrupt();
+        } finally {
+            INSTANCE.keepAliveLatch.countDown();
+        }
+    }
+
+    /**
+     * This method is invoked by {@link io.crate.bootstrap.CrateDB#main(String[])} to start CrateDB.
+     */
+    public static void init(Environment environment) throws BootstrapException, NodeValidationException, UserException {
+        LogConfigurator.setNodeName(Node.NODE_NAME_SETTING.get(environment.settings()));
+        try {
+            LogConfigurator.configure(environment);
+        } catch (IOException e) {
+            throw new BootstrapException(e);
+        }
+        try {
+            // fail if somebody replaced the lucene jars
+            checkLucene();
+
+            // install the default uncaught exception handler; must be done before security is
+            // initialized as we do not want to grant the runtime permission
+            // setDefaultUncaughtExceptionHandler
+            Thread.setDefaultUncaughtExceptionHandler(new ElasticsearchUncaughtExceptionHandler());
+
+            INSTANCE = new Bootstrap(true, environment);
+            INSTANCE.start();
+        } catch (NodeValidationException | RuntimeException e) {
+            // disable console logging, so user does not see the exception twice (jvm will show it already)
+            final Logger rootLogger = LogManager.getRootLogger();
+            final Appender maybeConsoleAppender = Loggers.findAppender(rootLogger, ConsoleAppender.class);
+            if (maybeConsoleAppender != null) {
+                Loggers.removeAppender(rootLogger, maybeConsoleAppender);
+            }
+            Logger logger = LogManager.getLogger(Bootstrap.class);
+            // HACK, it sucks to do this, but we will run users out of disk space otherwise
+            if (e instanceof CreationException) {
+                // guice: log the shortened exc to the log file
+                ByteArrayOutputStream os = new ByteArrayOutputStream();
+                PrintStream ps = null;
+                ps = new PrintStream(os, false, StandardCharsets.UTF_8);
+                new StartupException(e).printStackTrace(ps);
+                ps.flush();
+                logger.error("Guice Exception: {}", os.toString(StandardCharsets.UTF_8));
+            } else if (e instanceof NodeValidationException) {
+                logger.error("node validation exception\n{}", e.getMessage());
+            } else {
+                // full exception
+                logger.error("Exception", e);
+            }
+            // re-enable it if appropriate, so they can see any logging during the shutdown process
+            if (maybeConsoleAppender != null) {
+                Loggers.addAppender(rootLogger, maybeConsoleAppender);
+            }
+
+            throw e;
+        }
+    }
+
+    private static void checkLucene() {
+        if (org.elasticsearch.Version.CURRENT.luceneVersion.equals(org.apache.lucene.util.Version.LATEST) == false) {
+            throw new AssertionError("Lucene version mismatch this version of CrateDB requires lucene version ["
+                                     + org.elasticsearch.Version.CURRENT.luceneVersion + "]  but the current lucene version is [" + org.apache.lucene.util.Version.LATEST + "]");
+        }
+    }
+}
+

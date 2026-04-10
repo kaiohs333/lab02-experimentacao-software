@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+LWJGL/lwjgl3,5305,690,2012-12-23T15:40:04Z,23,10641,489904,6.0,6.8359,8.144,2.0,2.2697,1.0429,91.0,865.5031,15150.4095,52.0,108.07,220.858

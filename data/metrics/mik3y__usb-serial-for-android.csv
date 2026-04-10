@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mik3y/usb-serial-for-android,5563,1679,2013-06-30T23:17:45Z,34,72,1083,4.0,6.0,7.2189,1.0,1.375,0.6594,1.0,39.5417,118.4366,24.0,117.3611,274.7117

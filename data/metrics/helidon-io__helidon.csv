@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+helidon-io/helidon,3761,596,2018-08-27T11:03:52Z,139,7091,195344,4.0,5.4709,5.3561,1.0,1.3843,1.0908,1.0,34.0429,359.673,19.0,44.8511,81.3287

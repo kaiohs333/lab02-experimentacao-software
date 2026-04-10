@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+rstudio/rstudio,4976,1166,2010-12-07T19:10:25Z,0,7170,77789,2.0,4.8777,10.0543,1.0,1.2725,0.6206,0.0,372.0669,13095.3768,9.0,33.3734,120.0752

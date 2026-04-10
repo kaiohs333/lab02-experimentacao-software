@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+crate/crate,4375,589,2013-04-10T09:17:16Z,157,7616,154846,5.0,7.516,10.9402,1.0,1.6566,0.9979,1.0,50.4043,697.2203,26.0,57.9634,128.9846

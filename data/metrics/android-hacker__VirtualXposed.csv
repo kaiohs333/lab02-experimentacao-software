@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+android-hacker/VirtualXposed,15989,2520,2017-12-01T09:00:58Z,50,1453,5276,2.0,3.861,5.3544,2.0,2.7928,11.8586,0.0,14.6958,128.6376,8.0,32.8534,89.0877

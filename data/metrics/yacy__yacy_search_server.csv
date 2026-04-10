@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+yacy/yacy_search_server,3854,476,2015-03-22T12:54:20Z,0,1541,63274,4.0,5.3277,6.7429,1.0,1.3647,0.746,0.0,46.8274,301.3398,42.0,108.4478,212.4768

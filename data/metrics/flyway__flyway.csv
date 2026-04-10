@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+flyway/flyway,9623,1605,2012-12-14T18:43:22Z,291,750,22382,4.0,5.9187,5.6672,1.0,1.4773,0.8944,1.0,51.2027,597.7066,19.0,42.304,78.8028

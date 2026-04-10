@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+orhanobut/hawk,4072,397,2015-02-19T22:25:23Z,22,26,230,2.0,3.6154,4.2434,1.0,1.0385,0.1961,1.0,12.9615,25.5241,16.5,32.0769,36.642

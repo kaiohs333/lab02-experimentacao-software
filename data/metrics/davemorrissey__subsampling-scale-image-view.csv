@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+davemorrissey/subsampling-scale-image-view,8009,1231,2013-08-26T16:45:25Z,21,72,1156,3.5,5.625,6.6193,1.0,1.5833,0.8841,0.0,79.7222,641.0192,14.5,59.1944,243.5163

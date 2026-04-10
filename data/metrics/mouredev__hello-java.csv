@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mouredev/hello-java,3973,353,2025-03-25T11:15:12Z,0,55,529,0.0,0.6364,1.0067,1.0,1.3273,0.7711,0.0,0.4727,2.0625,6.0,14.9636,15.6062

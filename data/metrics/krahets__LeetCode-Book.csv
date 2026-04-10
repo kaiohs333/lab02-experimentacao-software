@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+krahets/LeetCode-Book,8191,883,2021-12-17T14:16:02Z,0,494,2569,1.0,1.2955,0.9239,1.0,1.002,0.045,0.0,0.081,0.4825,9.0,11.6215,7.9018

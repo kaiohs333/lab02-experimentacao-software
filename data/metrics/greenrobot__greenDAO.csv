@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+greenrobot/greenDAO,12617,2873,2011-10-22T16:15:14Z,8,364,5178,4.0,5.0137,4.6936,1.0,2.1016,1.7163,1.0,47.4533,241.2834,25.0,50.9478,73.9624

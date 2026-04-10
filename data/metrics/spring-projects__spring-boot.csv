@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-projects/spring-boot,80311,41863,2012-10-19T15:02:57Z,345,13951,224014,4.0,5.505,6.4195,1.0,1.2906,0.7779,0.0,12.9436,108.4235,11.0,29.4476,61.8421

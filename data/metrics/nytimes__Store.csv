@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+nytimes/Store,3503,305,2016-11-29T20:17:11Z,0,290,3174,5.0,6.1828,4.9814,1.0,1.5621,3.1389,1.0,17.0552,124.6656,14.0,38.9241,182.4719

@@ -1,0 +1,55 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.proxy.filter.encoding;
+
+import com.alibaba.druid.filter.encoding.CharsetConvert;
+import org.junit.jupiter.api.Test;
+
+import java.io.UnsupportedEncodingException;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * @author gang.su
+ */
+public class CharsetConvertTest {
+    private static final String CLIENT_ENCODEING = "gbk";
+    private static final String SERVER_ENCODEING = "utf-8";
+    public CharsetConvert charsetConvert = new CharsetConvert(CLIENT_ENCODEING, SERVER_ENCODEING);
+
+    @Test
+    public void testIsEmpty() {
+        assertTrue(charsetConvert.isEmpty(null));
+        assertTrue(charsetConvert.isEmpty(""));
+        assertTrue(!charsetConvert.isEmpty("a"));
+    }
+
+    @Test
+    public void testEncoding() {
+        String s = "你好";
+        String es = "";
+        String ds = "";
+        try {
+            es = new String(s.getBytes(CLIENT_ENCODEING), SERVER_ENCODEING);
+            ds = new String(s.getBytes(SERVER_ENCODEING), CLIENT_ENCODEING);
+
+            assertEquals(es, charsetConvert.encode(s));
+            assertEquals(ds, charsetConvert.decode(s));
+        } catch (UnsupportedEncodingException e) {
+        }
+
+    }
+}

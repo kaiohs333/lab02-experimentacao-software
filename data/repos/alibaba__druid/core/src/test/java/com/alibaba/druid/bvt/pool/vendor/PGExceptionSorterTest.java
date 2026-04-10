@@ -1,0 +1,19 @@
+package com.alibaba.druid.bvt.pool.vendor;
+
+import com.alibaba.druid.PoolTestCase;
+import com.alibaba.druid.pool.vendor.PGExceptionSorter;
+import org.postgresql.util.GT;
+import org.postgresql.util.PSQLException;
+import org.postgresql.util.PSQLState;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class PGExceptionSorterTest extends PoolTestCase {
+    public void test_pg() throws Exception {
+        PGExceptionSorter exSorter = new PGExceptionSorter();
+
+        PSQLException ex = new PSQLException(GT.tr("Expected an EOF from server, got: {0}", new Integer(0)),
+                PSQLState.COMMUNICATION_ERROR);
+        assertTrue(exSorter.isExceptionFatal(ex));
+    }
+}

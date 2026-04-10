@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/cameraview,4713,1017,2016-08-04T05:22:14Z,0,72,705,3.0,4.8333,5.3128,1.0,1.2639,0.5812,0.0,12.125,34.1665,13.0,41.4306,82.9561

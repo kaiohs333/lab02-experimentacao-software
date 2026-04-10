@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+baomidou/mybatis-plus,17324,4445,2016-08-18T10:06:53Z,40,1047,27257,3.0,5.7402,9.3418,1.0,1.3362,0.7953,0.0,25.0372,151.4278,14.0,37.4336,68.4287

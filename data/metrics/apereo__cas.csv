@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apereo/cas,11308,3959,2011-09-09T01:36:42Z,315,9123,95546,9.0,10.1082,7.347,1.0,1.4908,1.0187,0.0,7.8036,146.4445,13.0,25.5238,39.2726

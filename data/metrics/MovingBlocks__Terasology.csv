@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+MovingBlocks/Terasology,3845,1356,2011-03-04T03:49:19Z,70,2827,30440,4.0,6.1705,7.8708,1.0,1.4599,0.8864,0.0,25.2466,171.5078,17.0,39.7729,66.3021

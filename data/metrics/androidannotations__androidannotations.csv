@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+androidannotations/androidannotations,11008,2324,2012-01-06T08:48:03Z,0,962,22862,4.0,5.9906,6.4346,1.0,1.7162,0.928,1.0,26.1247,213.2865,11.0,29.9335,59.3234

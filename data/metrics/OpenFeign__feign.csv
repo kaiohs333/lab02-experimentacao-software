@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+OpenFeign/feign,9787,1938,2013-06-26T23:28:16Z,49,1312,13324,3.0,5.0404,6.2216,1.0,1.6761,3.1754,0.0,14.4459,90.61,9.0,30.2485,64.0678

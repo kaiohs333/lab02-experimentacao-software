@@ -1,0 +1,48 @@
+package com.alibaba.druid.bvt.pool.vendor;
+
+import com.alibaba.druid.PoolTestCase;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker;
+
+import java.sql.Connection;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MySQLValidConnectionCheckerTest extends PoolTestCase {
+    private DruidDataSource dataSource;
+
+    protected void setUp() throws Exception {
+        System.setProperty("druid.mysql.usePingMethod", "false");
+
+        dataSource = new DruidDataSource();
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setDbType("mysql");
+        dataSource.setValidationQuery("select 1");
+        dataSource.setValidConnectionChecker(new MySqlValidConnectionChecker());
+        dataSource.setInitialSize(1);
+        dataSource.setTestOnBorrow(true);
+    }
+
+    protected void tearDown() throws Exception {
+        dataSource.close();
+
+        System.clearProperty("druid.mysql.usePingMethod");
+    }
+
+    public void test_connect() throws Exception {
+        {
+            Connection conn = dataSource.getConnection();
+            conn.close();
+        }
+
+        MySqlValidConnectionChecker checker = (MySqlValidConnectionChecker) dataSource.getValidConnectionChecker();
+        assertFalse(checker.isUsePingMethod());
+
+        dataSource.setConnectionProperties("druid.mysql.usePingMethod=true");
+
+        assertTrue(checker.isUsePingMethod());
+
+        Connection conn = dataSource.getConnection();
+        conn.close();
+    }
+}

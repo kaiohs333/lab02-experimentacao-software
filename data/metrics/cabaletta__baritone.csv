@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cabaletta/baritone,8759,1807,2018-08-01T15:34:21Z,85,473,12148,4.0,6.6998,8.2828,1.0,1.3869,0.8081,1.0,22.167,128.1924,19.0,47.2051,90.193

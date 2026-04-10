@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/bundletool,3961,419,2018-05-04T07:24:09Z,65,882,18718,7.0,9.4501,8.8641,1.0,1.2653,1.1911,6.0,83.322,532.8485,30.0,62.2268,119.805

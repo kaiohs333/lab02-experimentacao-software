@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/DataX,17147,5662,2018-01-18T10:09:47Z,7,1222,9788,3.0,4.4566,5.6825,1.0,1.7029,1.4841,0.0,22.6489,185.316,25.0,66.4435,104.1218

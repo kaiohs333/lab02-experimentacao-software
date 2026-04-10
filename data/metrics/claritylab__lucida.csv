@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+claritylab/lucida,4790,870,2014-05-13T17:12:49Z,0,268,12289,4.0,5.8918,6.8603,1.0,1.5448,0.7848,1.0,23.5187,74.2163,39.0,86.6455,164.0921

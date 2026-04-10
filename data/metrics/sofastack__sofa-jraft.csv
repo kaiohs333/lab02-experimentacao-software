@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+sofastack/sofa-jraft,3800,1192,2019-03-04T10:13:43Z,32,1450,35330,3.0,6.1428,8.3542,1.0,1.4655,1.0879,1.0,75.9345,317.7617,18.0,95.3262,445.5213

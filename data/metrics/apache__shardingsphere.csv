@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/shardingsphere,20703,6913,2016-01-18T12:49:26Z,59,8907,184828,5.0,7.3972,13.4875,1.0,1.3802,0.7543,0.0,29.7257,421.8764,11.0,27.9879,65.2568

@@ -1,0 +1,66 @@
+package com.alibaba.druid.bvt.pool;
+
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.ValidConnectionCheckerAdapter;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import javax.sql.PooledConnection;
+
+import java.sql.Connection;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * 这个场景测试defaultAutoCommit
+ *
+ * @author wenshao [szujobs@hotmail.com]
+ */
+public class DruidDataSourceTest_testOnBorrowFailed {
+    private DruidDataSource dataSource;
+
+    private AtomicInteger validCount = new AtomicInteger();
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        dataSource = new DruidDataSource();
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setTestOnBorrow(true);
+        dataSource.setValidationQuery("select 'x'");
+        dataSource.setValidConnectionChecker(new ValidConnectionCheckerAdapter() {
+            @Override
+            public boolean isValidConnection(Connection c, String query, int validationQueryTimeout) {
+                int count = validCount.getAndIncrement();
+
+                if (count == 0) {
+                    return true;
+                }
+
+                if (count == 1) {
+                    return false;
+                }
+
+                return true;
+            }
+        });
+    }
+
+    @AfterEach
+    protected void tearDown() throws Exception {
+        dataSource.close();
+    }
+
+    @Test
+    public void test_conn() throws Exception {
+        PooledConnection conn = dataSource.getPooledConnection();
+        conn.close();
+
+        assertEquals(1, dataSource.getPoolingCount());
+        assertEquals(2, dataSource.getCreateCount());
+        assertEquals(1, dataSource.getDiscardCount());
+        assertEquals(2, dataSource.getConnectCount());
+        assertEquals(1, dataSource.getCloseCount());
+    }
+}

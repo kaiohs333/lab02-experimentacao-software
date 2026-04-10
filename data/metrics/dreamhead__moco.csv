@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dreamhead/moco,4431,1084,2012-10-18T09:09:51Z,1,584,343,5.0,5.8476,5.7616,1.0,1.5394,0.8539,1.0,34.5702,363.2936,15.0,30.6592,54.0737

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/otter,8133,2476,2013-08-09T09:31:22Z,10,1296,28111,3.0,4.5378,5.1766,1.0,1.4537,0.9154,1.0,32.4545,252.5435,21.0,52.5949,180.054

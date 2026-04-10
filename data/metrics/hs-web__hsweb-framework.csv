@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+hs-web/hsweb-framework,8404,3036,2016-01-18T03:51:39Z,32,858,8384,4.0,6.2063,6.2317,1.0,1.3392,1.0552,0.0,11.5291,41.1155,11.5,30.4814,63.545

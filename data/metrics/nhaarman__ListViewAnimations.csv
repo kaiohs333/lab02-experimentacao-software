@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+nhaarman/ListViewAnimations,5539,1629,2013-03-19T11:59:23Z,14,137,2893,5.0,6.4745,5.5014,2.0,2.0584,1.2353,0.0,10.4599,45.0585,17.0,41.5839,61.9731

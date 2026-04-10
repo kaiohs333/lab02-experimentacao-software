@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Graylog2/graylog2-server,7986,1099,2010-05-17T21:27:02Z,0,7854,122030,6.0,8.2222,9.0758,1.0,1.3318,0.711,1.0,18.3254,103.1528,16.0,34.5927,66.5846

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+robolectric/robolectric,6001,1380,2010-08-28T00:28:25Z,111,4079,42406,4.0,5.9367,6.7161,1.0,1.3501,1.1721,0.0,71.9895,628.0077,14.0,56.1795,132.4121

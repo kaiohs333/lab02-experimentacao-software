@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/zeppelin,6607,2819,2015-03-25T07:00:06Z,0,2106,28676,3.0,5.5916,7.0826,1.0,1.2512,0.6466,1.0,43.3989,344.0085,30.0,90.472,585.0176

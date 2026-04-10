@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+microsoft/typespec,5646,351,2021-06-30T23:29:49Z,453,4752,284448,8.0,8.9386,7.0148,1.0,1.1521,0.4717,1.0,24.3601,128.0923,27.0,40.7494,62.2557

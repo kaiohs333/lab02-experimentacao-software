@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+camunda/camunda-bpm-platform,4268,1707,2013-01-03T10:10:31Z,0,10734,264692,4.0,6.2922,7.767,1.0,1.6096,0.9966,1.0,86.255,2098.804,15.0,50.9122,141.6629

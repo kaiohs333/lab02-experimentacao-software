@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+pentaho/pentaho-kettle,8325,3584,2013-10-08T18:27:11Z,1,11362,202588,2.0,6.0598,9.2604,1.0,1.2814,0.6149,0.0,81.9304,1226.4483,11.0,69.8096,197.4991

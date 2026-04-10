@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+LMAX-Exchange/disruptor,18273,3962,2012-09-21T13:42:24Z,14,410,7101,3.0,4.4805,4.8221,1.0,1.2902,0.8102,0.0,25.8829,224.6995,13.0,32.1146,66.8333

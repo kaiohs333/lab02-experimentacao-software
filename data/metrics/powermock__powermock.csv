@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+powermock/powermock,4187,580,2014-05-28T07:53:53Z,16,1265,20708,2.0,3.3692,3.9453,1.0,1.2427,0.6442,0.0,22.7652,281.7809,11.0,25.9636,62.7871

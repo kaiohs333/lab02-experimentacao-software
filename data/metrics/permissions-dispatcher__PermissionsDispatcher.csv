@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+permissions-dispatcher/PermissionsDispatcher,11203,1437,2015-08-15T21:41:05Z,40,119,133,0.0,1.6218,3.2832,1.0,1.2269,0.5278,3.0,34.3782,327.1934,11.0,26.7563,97.1263

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/cassandra,9677,3855,2009-05-21T02:10:09Z,0,13117,217988,5.0,6.8631,8.0686,1.0,1.7574,1.8237,1.0,60.6294,1456.0262,23.0,59.563,118.4743

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+didi/DoKit,20434,3190,2018-08-14T10:32:07Z,14,1569,28537,2.0,4.4997,5.7132,1.0,1.3199,0.8366,0.0,71.768,634.3989,14.0,51.3678,105.8058

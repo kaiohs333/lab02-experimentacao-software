@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+redis/jedis,12298,3902,2010-06-11T13:04:43Z,120,1448,30025,3.0,5.7831,8.7733,1.0,1.4026,0.8331,1.0,460.8101,13684.3873,26.0,87.4012,241.1609

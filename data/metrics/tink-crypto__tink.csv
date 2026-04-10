@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+tink-crypto/tink,13559,1185,2014-06-06T16:21:09Z,21,1465,33206,5.0,7.4416,7.3866,1.0,1.2928,1.2456,1.0,30.0758,184.0465,30.0,56.0826,78.7861

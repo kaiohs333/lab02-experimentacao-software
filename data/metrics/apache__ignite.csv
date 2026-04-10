@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/ignite,5059,1931,2015-02-19T08:00:05Z,0,21130,616695,3.0,5.6118,8.9364,1.0,1.6509,1.525,0.0,493.6613,64415.3476,15.0,53.2489,434.6362

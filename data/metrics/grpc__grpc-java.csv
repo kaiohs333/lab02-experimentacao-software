@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+grpc/grpc-java,11999,3977,2014-12-08T19:00:00Z,189,5612,68055,3.0,5.7096,8.1429,1.0,1.4073,1.0419,0.0,14.2083,129.5761,12.0,47.1224,124.388

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cjlin1/libsvm,4696,1638,2013-09-10T14:32:07Z,0,34,231,1.5,3.2647,4.04,1.0,1.3529,0.8836,0.0,19.6176,100.0436,6.0,92.7059,205.982

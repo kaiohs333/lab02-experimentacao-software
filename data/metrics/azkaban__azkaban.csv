@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+azkaban/azkaban,4515,1572,2012-10-18T01:34:53Z,48,1283,31497,4.0,6.4934,8.1619,1.0,1.3476,0.7855,1.0,35.8363,172.5186,35.0,73.1574,121.9669

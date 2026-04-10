@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+xxv/android-lifecycle,5266,665,2014-04-18T14:26:22Z,0,6,11,7.5,7.0,5.2154,2.0,1.6667,0.5164,190.0,151.6667,121.9585,104.0,80.1667,54.0645

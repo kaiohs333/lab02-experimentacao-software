@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JesusFreke/smali,6616,1111,2012-09-23T19:51:16Z,0,1152,25612,4.0,5.9766,8.4115,1.0,1.6372,1.0991,1.0,15.0165,85.6993,17.0,40.592,89.2101

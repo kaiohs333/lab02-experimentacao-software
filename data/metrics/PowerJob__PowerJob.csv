@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+PowerJob/PowerJob,7717,1369,2020-03-16T09:19:55Z,51,755,11585,4.0,5.7841,6.2354,1.0,1.1801,0.5296,0.0,5.1377,27.9367,14.0,32.694,62.0642

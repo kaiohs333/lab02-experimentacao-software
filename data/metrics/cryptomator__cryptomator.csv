@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cryptomator/cryptomator,14842,1278,2014-02-02T00:43:47Z,205,473,2506,6.0,8.4186,8.1377,1.0,1.4207,0.9625,1.0,19.6237,69.041,22.0,40.4144,47.9162

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jbloch/effective-java-3e-source-code,4015,1979,2018-08-03T20:48:35Z,0,202,743,1.0,1.1287,1.0805,1.0,1.1881,0.6573,0.0,1.3267,3.4787,12.5,14.9406,11.1081

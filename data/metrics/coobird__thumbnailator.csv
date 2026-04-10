@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+coobird/thumbnailator,5397,804,2015-07-25T05:38:33Z,0,224,15567,2.0,4.0893,4.8605,1.0,1.2366,0.7101,0.0,93.2232,851.4021,24.0,87.4777,227.8314

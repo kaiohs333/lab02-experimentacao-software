@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bytedeco/javacpp,4687,597,2014-04-21T12:47:21Z,14,215,7326,5.0,5.9116,6.9817,2.0,2.0093,1.2418,1.0,151.1395,382.457,43.0,126.0,454.6864

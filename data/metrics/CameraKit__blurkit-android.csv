@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+CameraKit/blurkit-android,3763,314,2016-11-06T03:14:58Z,3,10,129,5.0,6.1,5.646,1.0,1.5,0.7071,0.0,30.3,90.0025,23.5,49.7,86.6154

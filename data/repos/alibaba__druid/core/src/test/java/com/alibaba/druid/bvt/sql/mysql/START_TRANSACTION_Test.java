@@ -1,0 +1,129 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.sql.mysql;
+
+import com.alibaba.druid.sql.SQLUtils;
+import com.alibaba.druid.sql.ast.SQLStatement;
+import com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser;
+import com.alibaba.druid.sql.parser.SQLStatementParser;
+import com.alibaba.druid.util.JdbcConstants;
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class START_TRANSACTION_Test {
+    @Test
+    public void test_0() throws Exception {
+        String sql = "START TRANSACTION;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("START TRANSACTION;", text);
+    }
+
+    @Test
+    public void test_1() throws Exception {
+        String sql = "START TRANSACTION WITH CONSISTENT SNAPSHOT;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("START TRANSACTION WITH CONSISTENT SNAPSHOT;", text);
+    }
+
+    @Test
+    public void test_2() throws Exception {
+        String sql = "START TRANSACTION BEGIN;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("START TRANSACTION BEGIN;", text);
+    }
+
+    @Test
+    public void test_3() throws Exception {
+        String sql = "START TRANSACTION BEGIN WORK;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("START TRANSACTION BEGIN WORK;", text);
+    }
+
+    @Test
+    public void test_4() throws Exception {
+        String sql = "COMMIT;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("COMMIT;", text);
+    }
+
+    @Test
+    public void test_5() throws Exception {
+        String sql = "COMMIT WORK;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("COMMIT WORK;", text);
+    }
+
+    @Test
+    public void test_6() throws Exception {
+        String sql = "ROLLBACK;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("ROLLBACK;", text);
+    }
+
+    @Test
+    public void test_7() throws Exception {
+        String sql = "SET autocommit=0;";
+
+        SQLStatementParser parser = new MySqlStatementParser(sql);
+        List<SQLStatement> stmtList = parser.parseStatementList();
+
+        String text = output(stmtList);
+
+        assertEquals("SET autocommit = 0;", text);
+    }
+
+    private String output(List<SQLStatement> stmtList) {
+        return SQLUtils.toSQLString(stmtList, JdbcConstants.MYSQL);
+    }
+}

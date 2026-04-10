@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+roboguice/roboguice,3744,812,2012-08-12T20:37:19Z,0,3335,19874,2.0,3.7931,5.2971,1.0,1.3106,1.183,0.0,7.1277,70.3981,6.0,22.1967,67.8625

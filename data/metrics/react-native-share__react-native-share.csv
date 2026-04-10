@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+react-native-share/react-native-share,3877,974,2015-09-30T02:27:34Z,145,41,211,3.0,5.6341,4.7841,2.0,2.0732,0.9053,8.0,8.6098,11.3707,21.0,43.7073,54.2882

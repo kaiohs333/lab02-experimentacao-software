@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mapstruct/mapstruct,7632,1013,2012-05-28T12:42:42Z,36,4805,40034,2.0,3.8356,4.8828,1.0,1.1744,0.6035,0.0,11.189,73.6633,9.0,21.6256,48.8819

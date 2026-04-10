@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+baidu/uid-generator,5581,1564,2017-03-27T04:03:43Z,0,25,1026,1.0,2.88,3.3828,1.0,1.28,0.7371,1.0,11.72,21.1985,24.0,34.92,32.6125

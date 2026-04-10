@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bazelbuild/bazel,25264,4434,2014-06-12T16:00:38Z,246,10756,251083,5.0,7.5356,10.3639,1.0,1.6114,1.3208,1.0,71.04,958.8302,18.0,55.6331,123.9693

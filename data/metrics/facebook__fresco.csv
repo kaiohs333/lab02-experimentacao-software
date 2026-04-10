@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+facebook/fresco,17163,3749,2015-03-02T09:58:04Z,55,999,14995,5.0,6.6096,6.4866,1.0,1.4124,0.892,0.0,27.1772,119.7203,17.0,46.4675,69.7789

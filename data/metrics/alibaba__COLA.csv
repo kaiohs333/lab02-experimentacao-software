@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/COLA,12920,3231,2018-02-06T13:46:27Z,11,559,3037,3.0,4.3256,4.4991,1.0,1.3453,0.7741,0.0,4.975,18.3203,11.0,17.2075,20.1395

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jetty/jetty.project,4066,1990,2011-07-14T01:11:57Z,144,15184,197762,3.0,5.4508,6.3916,1.0,1.6211,1.544,0.0,25.5035,248.0479,14.0,48.1528,118.5303

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+android/views-widgets-samples,5181,2984,2019-09-06T21:39:12Z,0,152,3549,2.0,4.0263,4.2659,1.0,1.7303,1.1847,0.0,7.0132,21.0332,17.0,48.25,81.5784

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-projects/spring-security,9476,6249,2012-01-10T21:50:57Z,249,7176,157944,5.0,7.6442,8.4126,1.0,1.2651,0.7627,0.0,10.4978,50.4868,16.0,40.2549,74.4734

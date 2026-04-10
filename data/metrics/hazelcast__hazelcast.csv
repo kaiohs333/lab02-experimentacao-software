@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+hazelcast/hazelcast,6605,1872,2012-03-21T12:25:18Z,201,16975,351579,5.0,7.9344,15.7696,1.0,1.7849,4.7453,1.0,44.9385,437.9254,23.0,66.7884,320.0066

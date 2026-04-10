@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+redisson/redisson,24276,5499,2014-01-11T14:06:25Z,178,3020,113518,3.0,5.653,10.4454,1.0,1.3212,0.7129,0.0,166.806,1470.3173,14.0,57.1199,150.6466

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+RoaringBitmap/RoaringBitmap,3845,587,2013-06-17T20:29:23Z,46,647,12970,5.0,5.5688,4.8281,1.0,1.1376,0.4635,0.0,257.9675,1862.4427,26.0,123.0077,346.96

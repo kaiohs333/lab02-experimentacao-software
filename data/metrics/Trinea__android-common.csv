@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Trinea/android-common,5023,2610,2012-06-19T07:49:46Z,1,110,5662,3.0,4.4455,4.2439,1.0,1.2455,0.6235,1.0,43.0636,150.885,22.0,61.0545,91.9232

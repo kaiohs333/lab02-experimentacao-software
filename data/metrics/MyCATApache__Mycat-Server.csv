@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+MyCATApache/Mycat-Server,9542,3824,2014-12-04T02:46:54Z,7,1291,31855,3.0,4.9404,6.396,1.0,1.2936,0.7195,0.0,78.488,882.9322,33.0,71.993,120.5471

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ityouknow/spring-cloud-examples,6217,3066,2017-04-28T08:48:53Z,0,60,41,4.0,3.9,1.0688,1.0,1.0167,0.1291,0.0,0.4667,2.103,5.0,6.4167,5.7851

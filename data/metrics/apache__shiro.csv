@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/shiro,4439,2302,2009-08-29T08:00:17Z,17,1029,40557,3.0,5.0671,5.2574,1.0,1.7784,1.5981,1.0,19.8435,80.6594,14.0,35.8455,57.2816

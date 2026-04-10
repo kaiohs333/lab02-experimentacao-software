@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ElderDrivers/EdXposed,5664,648,2019-01-18T16:18:19Z,27,920,51756,4.0,5.7261,6.4353,1.0,1.5641,0.9996,1.0,191.0783,2193.7718,26.0,78.037,163.9524

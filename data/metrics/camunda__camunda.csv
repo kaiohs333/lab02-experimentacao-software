@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+camunda/camunda,4056,751,2016-03-20T03:38:04Z,564,16888,253477,5.0,7.2704,9.436,1.0,1.3794,1.0268,1.0,30.5807,244.5701,21.0,43.2209,66.5975

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mcxiaoke/packer-ng-plugin,4814,857,2015-11-24T04:08:08Z,1,31,438,2.0,2.8065,2.4416,1.0,1.3871,0.8823,1.0,18.6452,41.442,29.0,57.2903,63.2715

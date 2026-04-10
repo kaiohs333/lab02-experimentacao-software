@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/error-prone,7150,787,2014-08-21T23:26:50Z,64,3053,52727,5.0,8.0059,14.141,1.0,1.5522,1.1051,0.0,27.2254,344.7075,17.0,35.132,62.3393

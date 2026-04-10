@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/google-authenticator,5322,990,2014-10-08T17:54:27Z,0,61,1959,2.0,3.8852,5.0501,1.0,1.6885,1.3107,1.0,29.6557,90.1571,18.0,64.5082,139.358

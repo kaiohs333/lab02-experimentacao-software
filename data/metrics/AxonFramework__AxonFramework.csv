@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+AxonFramework/AxonFramework,3570,837,2011-12-02T16:04:42Z,150,4570,122472,5.0,6.1967,6.1598,1.0,1.2602,0.7048,0.0,11.798,79.3095,16.0,36.2013,62.1457

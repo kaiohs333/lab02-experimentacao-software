@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+houbb/sensitive-word,5751,781,2020-01-07T03:10:44Z,2,228,3227,2.0,3.0526,3.5948,1.0,1.1711,0.4801,0.0,20.8684,152.8734,9.0,18.9518,31.9164

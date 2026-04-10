@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+osmandapp/OsmAnd,5607,1136,2011-01-15T19:59:44Z,1,6130,56832,5.0,8.9961,11.2237,1.0,1.7209,2.2452,1.0,109.1279,623.7046,27.0,114.0235,690.6167

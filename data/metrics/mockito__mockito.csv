@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mockito/mockito,15435,2654,2012-10-13T20:27:12Z,226,2141,21683,2.0,3.3237,4.4446,1.0,1.3979,1.0772,0.0,18.9851,277.907,8.0,24.9963,48.9918

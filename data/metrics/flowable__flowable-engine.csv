@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+flowable/flowable-engine,9148,2820,2016-10-13T07:21:43Z,29,9175,179434,4.0,6.5393,9.4152,1.0,1.65,0.9983,1.0,151.2694,2964.9939,21.0,58.5234,144.5074

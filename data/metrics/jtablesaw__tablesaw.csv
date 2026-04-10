@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jtablesaw/tablesaw,3744,654,2016-01-01T14:58:28Z,84,766,11472,4.0,6.0561,6.2642,1.0,1.2833,0.598,1.0,108.389,478.5567,23.0,63.2833,103.6525

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/Hystrix,24467,4705,2012-11-19T20:14:46Z,79,2005,17737,2.0,3.3456,5.1831,1.0,1.5681,3.5913,0.0,20.2539,385.2413,8.0,30.9277,143.6975

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+remkop/picocli,5335,454,2017-02-01T16:38:41Z,86,2938,12915,2.0,2.8264,4.5199,1.0,1.1089,1.4689,0.0,58.9537,970.7468,5.0,32.6838,305.1819

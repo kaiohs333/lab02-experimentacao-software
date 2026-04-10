@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+qunarcorp/bistoury,4087,840,2019-08-01T07:54:25Z,8,1361,24893,3.0,4.9838,6.1142,1.0,1.2814,0.7302,1.0,21.4159,119.1894,23.0,54.1058,92.8357

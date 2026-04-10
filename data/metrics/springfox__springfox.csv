@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+springfox/springfox,5938,1519,2012-05-06T06:38:57Z,12,1134,17145,3.0,5.7046,7.6106,1.0,1.1208,0.3969,0.0,23.2416,151.4205,16.0,28.2743,40.9003

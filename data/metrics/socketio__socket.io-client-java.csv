@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+socketio/socket.io-client-java,5413,977,2013-04-28T17:04:05Z,7,229,244,1.0,1.9214,2.7993,1.0,1.0961,0.4183,0.0,4.2533,34.0957,7.0,24.6245,73.1687

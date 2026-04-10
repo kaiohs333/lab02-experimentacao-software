@@ -1,0 +1,38 @@
+package com.alibaba.druid.bvt.sql.eval;
+
+import com.alibaba.druid.sql.visitor.SQLEvalVisitorUtils;
+import com.alibaba.druid.util.JdbcConstants;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EvalMethodTanTest {
+    @Test
+    public void test_reverse() throws Exception {
+        assertEquals(Math.tan(1), SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "tan(1)"));
+        assertEquals(Math.tan(1.001), SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "tan(1.001)"));
+        assertEquals(Math.tan(0), SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "tan(0)"));
+    }
+
+    @Test
+    public void test_error() throws Exception {
+        Exception error = null;
+        try {
+            SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "tan()", 12L);
+        } catch (Exception e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+
+    @Test
+    public void test_error_1() throws Exception {
+        Exception error = null;
+        try {
+            SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "tan(a)");
+        } catch (Exception e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+}

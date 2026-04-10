@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+eirslett/frontend-maven-plugin,4350,879,2013-08-30T14:44:38Z,0,99,437,3.0,5.596,6.2465,1.0,1.7273,0.9456,1.0,7.0505,28.2541,23.0,37.4949,49.9866

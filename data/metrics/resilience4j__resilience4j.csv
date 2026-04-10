@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+resilience4j/resilience4j,10605,1449,2015-06-03T09:21:01Z,36,1747,32072,6.0,7.2261,6.474,1.0,1.4488,0.9932,1.0,17.6835,97.1005,21.0,37.6216,56.1146

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ksoichiro/Android-ObservableScrollView,9626,2048,2014-11-08T14:45:20Z,0,335,2976,3.0,5.0149,4.6063,2.0,1.9672,1.1667,0.0,7.5701,30.685,13.0,37.6746,67.6615

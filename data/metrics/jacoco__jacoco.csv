@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jacoco/jacoco,4517,1200,2012-07-08T21:45:13Z,50,962,21283,3.0,4.1424,4.3859,1.0,1.4304,0.675,0.0,12.4158,79.3176,17.0,38.9761,56.7794

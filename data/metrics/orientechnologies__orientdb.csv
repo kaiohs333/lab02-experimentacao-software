@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+orientechnologies/orientdb,4943,874,2012-12-09T20:33:47Z,231,5108,63002,5.0,6.5519,9.1667,1.0,1.6288,0.9719,1.0,312.5891,16212.3006,29.0,88.6298,560.1517

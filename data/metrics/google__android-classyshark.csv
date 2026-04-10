@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/android-classyshark,7597,874,2015-10-12T13:40:48Z,17,212,2466,2.0,3.1698,3.5665,1.0,1.2783,0.9251,1.0,10.25,27.5689,16.5,41.1038,60.5191

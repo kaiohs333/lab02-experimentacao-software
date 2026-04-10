@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/Alink,3620,793,2018-09-30T06:36:11Z,22,8181,73735,5.0,6.4727,6.245,1.0,1.7423,1.1858,0.0,34.7027,236.7063,13.0,58.1343,228.8156

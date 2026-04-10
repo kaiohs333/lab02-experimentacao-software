@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+WVector/AppUpdate,3581,741,2017-06-19T09:38:42Z,3,64,1060,3.0,4.4375,6.0129,1.0,1.1562,0.407,1.0,37.1406,112.1626,13.0,45.7031,78.5836

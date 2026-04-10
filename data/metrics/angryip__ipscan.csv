@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+angryip/ipscan,4896,804,2011-06-28T20:58:48Z,32,364,2890,4.0,5.0632,4.7943,1.0,1.6896,1.6647,0.0,4.3544,12.7239,18.0,33.9945,40.9955

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+fyhertz/libstreaming,3656,1074,2013-01-30T21:24:47Z,0,89,2190,2.0,3.573,4.5599,1.0,1.4157,0.8635,0.0,23.2921,66.5639,29.0,76.382,116.735

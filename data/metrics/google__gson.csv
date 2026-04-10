@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/gson,24349,4416,2015-03-19T18:21:20Z,12,1085,11908,2.0,3.0249,4.4513,1.0,1.2848,1.0242,0.0,20.7253,381.8383,8.0,32.1051,91.8292

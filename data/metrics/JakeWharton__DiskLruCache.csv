@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JakeWharton/DiskLruCache,5865,1170,2012-01-05T00:36:34Z,0,12,413,2.5,3.25,2.9886,1.0,1.3333,0.7785,3.0,11.0,25.5912,43.0,161.4167,277.9531

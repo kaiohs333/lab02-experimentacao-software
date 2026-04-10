@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+tencentmusic/supersonic,4764,933,2023-06-12T07:23:28Z,15,1138,2969,4.0,6.2926,7.2404,1.0,1.29,0.6251,0.0,46.0202,654.3827,14.0,40.9095,83.5399

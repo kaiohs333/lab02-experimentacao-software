@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ityouknow/spring-boot-examples,30638,12299,2016-11-05T05:32:33Z,0,303,674,4.0,4.6667,3.1932,1.0,1.0264,0.1606,0.0,4.5842,15.8699,7.0,13.7657,15.0525

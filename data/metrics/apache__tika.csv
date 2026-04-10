@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/tika,3658,917,2009-05-21T02:12:11Z,0,2580,85781,4.0,6.1178,6.5876,1.0,1.5151,1.7779,1.0,31.5302,186.8231,31.5,69.7202,109.261

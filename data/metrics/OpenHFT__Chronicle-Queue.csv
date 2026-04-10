@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+OpenHFT/Chronicle-Queue,3706,561,2013-06-02T15:11:33Z,540,528,10285,4.0,5.4072,6.2469,1.0,1.5966,0.8414,0.0,169.3447,2155.0826,21.0,55.0663,134.4181

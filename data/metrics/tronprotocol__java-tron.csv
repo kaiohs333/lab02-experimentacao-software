@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+tronprotocol/java-tron,4047,1639,2017-12-26T10:20:38Z,82,1678,17093,7.0,8.5816,11.0079,1.0,1.789,2.0221,1.0,83.1925,1270.9381,31.0,91.0238,231.1647

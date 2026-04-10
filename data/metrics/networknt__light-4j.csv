@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+networknt/light-4j,3676,628,2016-09-09T22:28:14Z,195,1296,30601,3.0,4.7245,5.3101,1.0,1.1674,0.5726,0.0,25.1019,129.5678,24.0,58.598,91.8183

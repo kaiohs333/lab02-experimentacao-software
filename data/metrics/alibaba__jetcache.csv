@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/jetcache,5572,1085,2017-04-12T07:48:23Z,67,446,2540,4.0,6.0336,6.5044,1.0,1.6368,1.1007,0.0,15.9081,111.449,17.0,40.4058,66.4246

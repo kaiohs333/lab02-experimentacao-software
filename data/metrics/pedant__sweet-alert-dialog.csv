@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+pedant/sweet-alert-dialog,7232,1919,2014-10-19T09:24:09Z,2,16,32,1.5,4.375,5.5362,1.0,1.25,0.4472,0.0,31.0625,88.9498,23.0,58.9375,80.8418

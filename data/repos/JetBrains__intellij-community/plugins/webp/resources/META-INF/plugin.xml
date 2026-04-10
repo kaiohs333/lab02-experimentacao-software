@@ -1,0 +1,14 @@
+<idea-plugin allow-bundled-update="true">
+  <id>intellij.webp</id>
+  <vendor>JetBrains</vendor>
+  <depends>com.intellij.modules.lang</depends>
+  <name>WebP Support</name>
+  <description><![CDATA[
+    <p>Allows viewing images in the <a href="https://developers.google.com/speed/webp">WebP</a> format in the IDE.</p>
+    ]]></description>
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType name="Image" extensions="webp"/>
+    <imageReaderWriterSpi type="read" implementationClass="com.android.tools.adtui.webp.WebpImageReaderSpi"/>
+    <imageReaderWriterSpi type="write" implementationClass="com.android.tools.adtui.webp.WebpImageWriterSpi"/>
+  </extensions>
+</idea-plugin>

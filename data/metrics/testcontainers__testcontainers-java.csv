@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+testcontainers/testcontainers-java,8614,1813,2015-04-12T12:44:59Z,91,924,8150,5.0,5.3539,4.8189,1.0,1.4892,0.841,1.0,21.7608,163.4316,20.0,35.2608,49.0923

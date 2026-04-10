@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Konloch/bytecode-viewer,15460,1224,2014-10-14T10:26:46Z,62,414,9369,3.0,4.7246,6.2982,1.0,2.0531,1.8391,0.0,13.6884,59.0612,19.0,52.5797,91.6918

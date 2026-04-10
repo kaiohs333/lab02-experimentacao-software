@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dtinit/data-transfer-project,3610,491,2018-01-04T21:27:57Z,61,934,13807,4.0,6.9347,7.9603,1.0,1.2537,0.7164,0.0,6.8715,22.1492,19.0,36.5043,49.7717

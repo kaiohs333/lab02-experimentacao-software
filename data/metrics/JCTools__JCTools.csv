@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JCTools/JCTools,3810,586,2013-11-10T18:04:40Z,19,990,17223,3.0,4.7051,5.2976,3.0,4.3141,3.4285,0.0,22.4818,87.5599,18.0,46.398,83.4222

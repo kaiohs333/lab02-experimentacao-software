@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+langchain4j/langchain4j,11317,2073,2023-06-20T15:30:29Z,61,4383,38753,4.0,6.1723,6.9165,1.0,1.2047,0.612,1.0,20.7376,94.5081,19.0,42.1905,67.6816

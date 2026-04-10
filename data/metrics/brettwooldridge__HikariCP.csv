@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+brettwooldridge/HikariCP,21075,3013,2013-10-08T05:43:03Z,0,185,4095,3.0,4.3838,4.1961,1.0,1.2865,0.6586,0.0,172.6703,1408.6613,24.0,61.9676,101.9109

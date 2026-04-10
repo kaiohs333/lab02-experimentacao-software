@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+rest-assured/rest-assured,7126,1929,2010-10-21T08:35:43Z,0,706,26891,4.0,5.796,6.3204,1.0,1.2139,0.5255,1.0,105.9249,577.8845,14.0,41.1176,75.8904

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+android/testing-samples,9302,3646,2014-10-11T03:51:27Z,0,86,1888,5.5,5.5,3.5472,1.0,1.3488,0.5262,0.0,3.1512,6.8057,19.0,21.5,15.8209

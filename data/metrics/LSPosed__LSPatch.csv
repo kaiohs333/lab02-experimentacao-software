@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+LSPosed/LSPatch,8913,1073,2021-03-01T19:38:36Z,9,146,6048,2.0,4.3425,5.8962,1.0,1.3493,0.8598,0.0,23.8767,186.8812,18.5,48.0,113.5785

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+yasserg/crawler4j,4627,1909,2011-12-31T22:49:18Z,3,83,2377,4.0,5.2771,5.709,1.0,1.3133,0.5615,1.0,55.8916,331.0669,32.0,57.0602,71.6004

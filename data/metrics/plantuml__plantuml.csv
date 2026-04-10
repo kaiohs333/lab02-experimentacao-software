@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+plantuml/plantuml,12838,1163,2010-11-04T15:55:50Z,67,4160,145948,5.0,7.1776,7.3924,1.0,1.5135,0.8591,1.0,36.2964,607.3739,22.0,48.2262,94.1463

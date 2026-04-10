@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+killbill/killbill,5391,905,2012-10-21T20:55:05Z,151,2448,38805,6.0,8.6826,10.0687,1.0,1.8105,1.1346,1.0,28.2328,123.9009,23.0,61.8354,120.6146

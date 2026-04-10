@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/ARouter,14501,2614,2016-12-14T01:27:49Z,16,98,1534,2.0,3.7041,4.9663,1.0,1.4082,0.7843,0.0,17.449,83.3327,10.0,32.2959,57.9879

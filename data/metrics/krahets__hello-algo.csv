@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+krahets/hello-algo,124044,14954,2022-11-04T11:08:34Z,10,215,8665,2.0,1.8419,1.5017,1.0,1.0,0.0,1.0,4.707,10.4579,30.0,35.814,19.9949

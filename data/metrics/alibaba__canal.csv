@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/canal,29645,7660,2013-01-13T10:59:52Z,32,1054,20111,4.0,5.8112,6.4751,1.0,1.3795,0.8224,1.0,77.0342,466.3286,30.0,106.9696,367.8032

@@ -1,0 +1,36 @@
+package com.alibaba.druid.bvt.sql;
+
+import com.alibaba.druid.sql.ast.expr.SQLNumberExpr;
+import com.alibaba.druid.sql.dialect.oracle.parser.OracleExprParser;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EqualTest_number {
+    @Test
+    public void test_exits() throws Exception {
+        String sql = "3.5";
+        String sql_c = "3.51";
+        SQLNumberExpr exprA, exprB, exprC;
+        {
+            OracleExprParser parser = new OracleExprParser(sql);
+            exprA = (SQLNumberExpr) parser.expr();
+        }
+        {
+            OracleExprParser parser = new OracleExprParser(sql);
+            exprB = (SQLNumberExpr) parser.expr();
+        }
+        {
+            OracleExprParser parser = new OracleExprParser(sql_c);
+            exprC = (SQLNumberExpr) parser.expr();
+        }
+        assertEquals(exprA, exprB);
+        assertNotEquals(exprA, exprC);
+        assertTrue(exprA.equals(exprA));
+        assertFalse(exprA.equals(new Object()));
+        assertEquals(exprA.hashCode(), exprB.hashCode());
+
+        assertEquals(new SQLNumberExpr(), new SQLNumberExpr());
+        assertEquals(new SQLNumberExpr().hashCode(), new SQLNumberExpr().hashCode());
+    }
+}

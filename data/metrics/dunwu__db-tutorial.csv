@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dunwu/db-tutorial,5318,646,2017-08-08T06:33:38Z,0,209,3049,4.0,5.2057,5.1647,1.0,1.1818,0.5507,0.0,32.6077,181.501,15.0,53.6029,116.7992

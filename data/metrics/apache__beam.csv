@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/beam,8527,4523,2016-02-02T08:00:06Z,57,16543,259634,5.0,7.4851,8.2304,1.0,1.5295,1.385,0.0,20.311,174.1295,16.0,45.6281,100.1959

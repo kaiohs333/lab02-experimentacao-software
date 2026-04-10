@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+frohoff/ysoserial,8826,1856,2015-01-28T07:13:55Z,1,120,1052,3.0,5.4583,5.6552,1.0,1.3417,0.6673,1.0,8.8917,57.4585,19.0,32.0917,39.5281

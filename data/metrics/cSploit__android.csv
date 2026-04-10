@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cSploit/android,3592,1140,2014-10-04T05:53:29Z,33,512,3056,2.0,4.209,5.7615,1.0,1.5176,1.0411,0.0,15.6523,173.806,14.0,44.252,93.0016

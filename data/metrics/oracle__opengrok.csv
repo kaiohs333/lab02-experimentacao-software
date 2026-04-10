@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+oracle/opengrok,4785,804,2013-01-07T11:49:18Z,302,1148,45950,3.0,5.2195,6.727,1.0,1.6211,1.2837,1.0,78.4416,1077.3983,24.0,62.2622,114.4396

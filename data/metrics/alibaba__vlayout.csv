@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/vlayout,10761,1788,2017-02-27T08:11:47Z,34,159,3771,3.0,5.3145,6.7149,1.0,1.8553,1.4919,0.0,72.5409,368.4281,13.0,88.3145,198.9899

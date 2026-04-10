@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/Sentinel,23105,8151,2018-04-04T06:37:33Z,26,1519,31543,3.0,4.451,4.5559,1.0,1.1745,0.6456,0.0,12.4128,46.6842,20.0,36.6241,48.2171

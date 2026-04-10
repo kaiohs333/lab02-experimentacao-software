@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dromara/hmily,4248,1402,2017-09-28T06:29:01Z,0,877,24897,4.0,5.4139,4.8981,1.0,1.2223,0.577,0.0,10.5986,56.2185,12.0,31.3968,56.9205

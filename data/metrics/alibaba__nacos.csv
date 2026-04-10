@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/nacos,32765,13261,2018-06-15T06:49:27Z,90,5091,121844,3.0,5.383,6.5268,1.0,1.2736,0.6631,0.0,22.1603,279.2425,23.0,47.6641,78.0485

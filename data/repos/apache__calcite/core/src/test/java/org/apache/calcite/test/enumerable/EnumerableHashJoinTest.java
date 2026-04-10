@@ -1,0 +1,602 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to you under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.calcite.test.enumerable;
+
+import org.apache.calcite.adapter.enumerable.EnumerableRules;
+import org.apache.calcite.config.CalciteConnectionProperty;
+import org.apache.calcite.config.Lex;
+import org.apache.calcite.plan.RelOptLattice;
+import org.apache.calcite.plan.RelOptMaterialization;
+import org.apache.calcite.plan.RelOptPlanner;
+import org.apache.calcite.plan.RelTraitSet;
+import org.apache.calcite.rel.RelNode;
+import org.apache.calcite.rel.core.RelFactories;
+import org.apache.calcite.rel.metadata.DefaultRelMetadataProvider;
+import org.apache.calcite.rel.rules.CoreRules;
+import org.apache.calcite.runtime.Hook;
+import org.apache.calcite.sql.fun.SqlStdOperatorTable;
+import org.apache.calcite.sql2rel.TopDownGeneralDecorrelator;
+import org.apache.calcite.test.CalciteAssert;
+import org.apache.calcite.test.ReflectiveSchemaWithoutRowCount;
+import org.apache.calcite.test.schemata.hr.HrSchema;
+import org.apache.calcite.tools.Program;
+import org.apache.calcite.tools.Programs;
+import org.apache.calcite.tools.RelBuilder;
+import org.apache.calcite.util.Holder;
+
+import com.google.common.collect.ImmutableList;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+/**
+ * Unit test for
+ * {@link org.apache.calcite.adapter.enumerable.EnumerableHashJoin}.
+ */
+class EnumerableHashJoinTest {
+
+  @Test void innerJoin() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e join depts "
+                + "d on e.deptno=d.deptno")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], "
+            + "name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[=($1, $3)], joinType=[inner])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..2=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])\n")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales",
+            "empid=150; name=Sebastian; dept=Sales");
+  }
+
+  @Test void leftOuterJoin() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e  left outer "
+                + "join depts d on e.deptno=d.deptno")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], "
+            + "name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[=($1, $3)], joinType=[left])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..2=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])\n")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales",
+            "empid=150; name=Sebastian; dept=Sales",
+            "empid=200; name=Eric; dept=null");
+  }
+
+  @Test void rightOuterJoin() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e  right outer "
+                + "join depts d on e.deptno=d.deptno")
+        .explainContains("EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], "
+            + "name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[=($1, $3)], joinType=[right])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..2=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales",
+            "empid=150; name=Sebastian; dept=Sales",
+            "empid=null; name=null; dept=Marketing",
+            "empid=null; name=null; dept=HR");
+  }
+
+  @Test void leftOuterJoinWithPredicate() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e left outer "
+                + "join depts d on e.deptno=d.deptno and e.empid<150 and e"
+                + ".empid>d.deptno")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains(""
+            + "EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], "
+            + "name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $3), <(CAST($0):INTEGER NOT NULL, 150), >"
+            + "($0, $3))], joinType=[left])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..2=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])\n")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales",
+            "empid=150; name=Sebastian; dept=null",
+            "empid=200; name=Eric; dept=null");
+  }
+
+  @Test void rightOuterJoinWithPredicate() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e right outer "
+                + "join depts d on e.deptno=d.deptno and e.empid<150")
+        .explainContains(""
+            + "EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], "
+            + "name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[=($1, $3)], joinType=[right])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], expr#5=[CAST($t0):INTEGER NOT NULL], expr#6=[150], "
+            + "expr#7=[<($t5, $t6)], proj#0..2=[{exprs}], $condition=[$t7])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])\n")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales",
+            "empid=null; name=null; dept=Marketing",
+            "empid=null; name=null; dept=HR");
+  }
+
+  @Test void semiJoin() {
+    tester(false, new HrSchema())
+        .query(
+            "SELECT d.deptno, d.name FROM depts d WHERE d.deptno in (SELECT e.deptno FROM emps e)")
+        .explainContains("EnumerableHashJoin(condition=[=($0, $3)], "
+            + "joinType=[semi])\n"
+            + "  EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "    EnumerableTableScan(table=[[s, depts]])\n"
+            + "  EnumerableTableScan(table=[[s, emps]])")
+        .returnsUnordered(
+            "deptno=10; name=Sales");
+  }
+
+  /** Test case for
+   * <a href="https://issues.apache.org/jira/browse/CALCITE-4561">[CALCITE-4561]
+   * Wrong results for plan with EnumerableHashJoin (semi) on nullable colunms</a>. */
+  @Test void semiJoinWithNulls() {
+    tester(false, new HrSchema())
+        .query(
+            "SELECT e1.name FROM emps e1 WHERE e1.commission in (SELECT e2.commission FROM emps e2)")
+        .explainContains("EnumerableCalc(expr#0..1=[{inputs}], name=[$t0])\n"
+            + "  EnumerableHashJoin(condition=[=($1, $6)], joinType=[semi])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], name=[$t2], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableTableScan(table=[[s, emps]])\n\n")
+        .returnsUnordered(
+            "name=Bill",
+            "name=Eric",
+            "name=Theodore");
+  }
+
+  @Test void semiJoinWithPredicate() {
+    tester(false, new HrSchema())
+        .withRel(
+            // Retrieve employees with the top salary in their department. Equivalent SQL:
+            //   SELECT e.name, e.salary FROM emps e
+            //   WHERE  EXISTS (
+            //     SELECT 1 FROM emps e2
+            //     WHERE e.deptno = e2.deptno AND e2.salary > e.salary)
+            builder -> builder
+                .scan("s", "emps").as("e")
+                .scan("s", "emps").as("e2")
+                .semiJoin(
+                    builder.and(
+                        builder.equals(
+                            builder.field(2, "e", "deptno"),
+                            builder.field(2, "e2", "deptno")),
+                        builder.call(
+                            SqlStdOperatorTable.GREATER_THAN,
+                            builder.field(2, "e2", "salary"),
+                            builder.field(2, "e", "salary"))))
+                .project(
+                    builder.field("name"),
+                    builder.field("salary"))
+                .build())
+        .returnsUnordered(
+            "name=Bill; salary=10000.0",
+            "name=Sebastian; salary=7000.0");
+  }
+
+  @Test void innerJoinWithPredicate() {
+    tester(false, new HrSchema())
+        .query(
+            "select e.empid, e.name, d.name as dept from emps e join depts d"
+                + " on e.deptno=d.deptno and e.empid<150 and e.empid>d.deptno")
+        .explainContains(""
+            + "EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0], name=[$t2], dept=[$t4])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $3), >($0, $3))], joinType=[inner])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], expr#5=[CAST($t0):INTEGER NOT NULL], expr#6=[150], expr#7=[<($t5, $t6)], "
+            + "proj#0..2=[{exprs}], $condition=[$t7])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..3=[{inputs}], proj#0..1=[{exprs}])\n"
+            + "      EnumerableTableScan(table=[[s, depts]])\n")
+        .returnsUnordered(
+            "empid=100; name=Bill; dept=Sales",
+            "empid=110; name=Theodore; dept=Sales");
+  }
+
+  @Test void innerJoinWithCompositeKeyAndNullValues() {
+    tester(false, new HrSchema())
+        .query(
+            "select e1.empid from emps e1 join emps e2 "
+                + "on e1.deptno=e2.deptno and e1.commission=e2.commission")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..4=[{inputs}], empid=[$t0])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $3), =($2, $4))], joinType=[inner])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], deptno=[$t1], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n")
+        .returnsUnordered(
+            "empid=100",
+            "empid=110",
+            "empid=200");
+  }
+
+  @Test void leftOuterJoinWithCompositeKeyAndNullValues() {
+    tester(false, new HrSchema())
+        .query(
+            "select e1.empid, e2.empid from emps e1 left outer join emps e2 "
+                + "on e1.deptno=e2.deptno and e1.commission=e2.commission")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..5=[{inputs}], empid=[$t0], empid0=[$t3])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $4), =($2, $5))], joinType=[left])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n")
+        .returnsUnordered(
+            "empid=100; empid=100",
+            "empid=110; empid=110",
+            "empid=150; empid=null",
+            "empid=200; empid=200");
+  }
+
+  @Test void rightOuterJoinWithCompositeKeyAndNullValues() {
+    tester(false, new HrSchema())
+        .query(
+            "select e1.empid, e2.empid from emps e1 right outer join emps e2 "
+                + "on e1.deptno=e2.deptno and e1.commission=e2.commission")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..5=[{inputs}], empid=[$t0], empid0=[$t3])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $4), =($2, $5))], joinType=[right])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n")
+        .returnsUnordered(
+            "empid=100; empid=100",
+            "empid=110; empid=110",
+            "empid=200; empid=200",
+            "empid=null; empid=150");
+  }
+
+  @Test void fullOuterJoinWithCompositeKeyAndNullValues() {
+    tester(false, new HrSchema())
+        .query(
+            "select e1.empid, e2.empid from emps e1 full outer join emps e2 "
+                + "on e1.deptno=e2.deptno and e1.commission=e2.commission")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableCalc(expr#0..5=[{inputs}], empid=[$t0], empid0=[$t3])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $4), =($2, $5))], joinType=[full])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n")
+        .returnsUnordered(
+            "empid=100; empid=100",
+            "empid=110; empid=110",
+            "empid=150; empid=null",
+            "empid=200; empid=200",
+            "empid=null; empid=150");
+  }
+
+  @Test void semiJoinWithCompositeKeyAndNullValues() {
+    tester(true, new HrSchema())
+        .query(
+            "select e1.empid from emps e1 where exists (select 1 from emps e2 "
+                + "where e1.deptno=e2.deptno and e1.commission=e2.commission)")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner -> {
+          planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE);
+        })
+        .explainContains("EnumerableCalc(expr#0..2=[{inputs}], empid=[$t0])\n"
+            + "  EnumerableHashJoin(condition=[AND(=($1, $4), =($2, $7))], joinType=[semi])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], proj#0..1=[{exprs}], commission=[$t4])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n"
+            + "    EnumerableCalc(expr#0..4=[{inputs}], expr#5=[IS NOT NULL($t4)], proj#0..4=[{exprs}], $condition=[$t5])\n"
+            + "      EnumerableTableScan(table=[[s, emps]])\n")
+        .returnsUnordered(
+            "empid=100",
+            "empid=110",
+            "empid=200");
+  }
+
+  @Test void hashJoinWithIsNotDistinctFrom() {
+    String tempTableSql = "WITH t1(id, sal) as ( VALUES (1,10), (2,NULL), (3,30), (5, NULL)),"
+        + "t2(id, sal) as ( VALUES (1,10), (2,NULL), (4,40), (5, 50) ) ";
+    //        t1                     t2
+    //        id | sal               id | sal
+    //        1  | 10                1  | 10
+    //        2  | NULL              2  | NULL
+    //        3  | 30                4  | 40
+    //        5  | NULL              5  | 50
+
+    // inner join: t1.sal IS NOT DISTINCT FROM t2.sal
+    tester(false, new HrSchema())
+        .query(
+            tempTableSql
+                + "select t1.id, t1.sal, t2.id, t2.sal from t1 join t2"
+                + " on t1.sal is not distinct from t2.sal")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains(
+            "EnumerableHashJoin(condition=[IS NOT DISTINCT FROM($1, $3)], joinType=[inner])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id=1; sal=10; id=1; sal=10",
+            "id=2; sal=null; id=2; sal=null",
+            "id=5; sal=null; id=2; sal=null");
+
+    // inner join: t1.sal = t2.sal
+    tester(false, new HrSchema())
+        .query(
+            tempTableSql
+                + "select t1.id, t1.sal, t2.id, t2.sal from t1 join t2"
+                + " on t1.sal = t2.sal")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains("EnumerableHashJoin(condition=[=($1, $3)], joinType=[inner])\n"
+            + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+            + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id=1; sal=10; id=1; sal=10");
+
+    // inner join: t1.id = t2.id && t1.sal IS NOT DISTINCT FROM t2.sal
+    tester(false, new HrSchema())
+        .query(
+            tempTableSql
+                + "select t1.id, t1.sal, t2.id, t2.sal from t1 join t2"
+                + " on t1.id = t2.id and t1.sal is not distinct from t2.sal")
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner ->
+            planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE))
+        .explainContains(
+            "EnumerableHashJoin(condition=[AND(=($0, $2), IS NOT DISTINCT FROM($1, $3))], joinType=[inner])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id=1; sal=10; id=1; sal=10",
+            "id=2; sal=null; id=2; sal=null");
+
+    // semi join: t1.sal IS NOT DISTINCT FROM t2.sal
+    tester(true, new HrSchema())
+        .withRel(builder -> {
+          builder
+              .values(new String[]{"id1", "sal1"}, 1, 10, 2, null, 3, 30, 5, null)
+              .values(new String[]{"id2", "sal2"}, 1, 10, 2, null, 4, 40, 5, 50)
+              .semiJoin(
+                  builder.isNotDistinctFrom(
+                      builder.field(2, 0, "sal1"),
+                      builder.field(2, 1, "sal2")));
+          return builder.build();
+        })
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner -> {
+          planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE);
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[IS NOT DISTINCT FROM($1, $3)], joinType=[semi])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id1=1; sal1=10",
+            "id1=2; sal1=null",
+            "id1=5; sal1=null");
+
+    // semi join: t1.sal = t2.sal
+    tester(true, new HrSchema())
+        .withRel(builder -> {
+          builder
+              .values(new String[]{"id1", "sal1"}, 1, 10, 2, null, 3, 30, 5, null)
+              .values(new String[]{"id2", "sal2"}, 1, 10, 2, null, 4, 40, 5, 50)
+              .semiJoin(
+                  builder.equals(
+                      builder.field(2, 0, "sal1"),
+                      builder.field(2, 1, "sal2")));
+          return builder.build();
+        })
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner -> {
+          planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE);
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[=($1, $3)], joinType=[semi])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id1=1; sal1=10");
+
+    // semi join: t1.id = t2.id && t1.sal IS NOT DISTINCT FROM t2.sal
+    tester(true, new HrSchema())
+        .withRel(builder -> {
+          builder
+              .values(new String[]{"id1", "sal1"}, 1, 10, 2, null, 3, 30, 5, null)
+              .values(new String[]{"id2", "sal2"}, 1, 10, 2, null, 4, 40, 5, 50)
+              .semiJoin(
+                  builder.and(
+                      builder.equals(
+                          builder.field(2, 0, "id1"),
+                          builder.field(2, 1, "id2")),
+                      builder.isNotDistinctFrom(
+                          builder.field(2, 0, "sal1"),
+                          builder.field(2, 1, "sal2"))));
+          return builder.build();
+        })
+        .withHook(Hook.PLANNER, (Consumer<RelOptPlanner>) planner -> {
+          planner.removeRule(EnumerableRules.ENUMERABLE_MERGE_JOIN_RULE);
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[AND(=($0, $2), IS NOT DISTINCT FROM($1, $3))], joinType=[semi])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, 30 }, { 5, null }]])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 4, 40 }, { 5, 50 }]])\n")
+        .returnsUnordered(
+            "id1=1; sal1=10",
+            "id1=2; sal1=null");
+  }
+
+  /** Test case for
+   * <a href="https://issues.apache.org/jira/browse/CALCITE-7315">[CALCITE-7315]
+   * Support LEFT_MARK type for hash join in enumerable convention</a>. */
+  @Test void testLeftMarkJoin() {
+    Program subQuery =
+        Programs.hep(
+            ImmutableList.of(CoreRules.PROJECT_SUB_QUERY_TO_MARK_CORRELATE),
+            true,
+            DefaultRelMetadataProvider.INSTANCE);
+    Program toCalc =
+        Programs.hep(
+            ImmutableList.of(CoreRules.PROJECT_TO_CALC, CoreRules.FILTER_TO_CALC,
+                CoreRules.CALC_MERGE),
+            true,
+            DefaultRelMetadataProvider.INSTANCE);
+    Program topDownDecorrelator = new Program() {
+      @Override public RelNode run(RelOptPlanner planner, RelNode rel,
+          RelTraitSet requiredOutputTraits, List<RelOptMaterialization> materializations,
+          List<RelOptLattice> lattices) {
+        final RelBuilder relBuilder =
+            RelFactories.LOGICAL_BUILDER.create(rel.getCluster(), null);
+        return TopDownGeneralDecorrelator.decorrelateQuery(rel, relBuilder);
+      }
+    };
+    Program enumerableImpl = Programs.ofRules(EnumerableRules.ENUMERABLE_RULES);
+
+    // case1: left mark join from uncorrelated IN subquery (0 null-safe key, 1 not null-safe key)
+    tester(false, new HrSchema())
+        .query(
+            "WITH t1(id) as (VALUES (1), (2), (NULL)), t2(id) as (VALUES (2), (3)) "
+                + "select id, id in (select id from t2) as marker from t1")
+        .withHook(Hook.PROGRAM, (Consumer<Holder<Program>>) program -> {
+          program.set(Programs.sequence(subQuery, toCalc, enumerableImpl));
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[=($0, $1)], joinType=[left_mark])\n"
+                + "  EnumerableValues(tuples=[[{ 1 }, { 2 }, { null }]])\n"
+                + "  EnumerableCalc(expr#0=[{inputs}], id=[$t0])\n"
+                + "    EnumerableValues(tuples=[[{ 2 }, { 3 }]])\n")
+        .returnsUnordered(
+            "id=1; marker=false",
+            "id=2; marker=true",
+            "id=null; marker=null");
+
+    // case2: left mark join from uncorrelated IN subquery (0 null-safe key, 1 not null-safe key)
+    tester(false, new HrSchema())
+        .query(
+            "WITH t1(id) as (VALUES (1), (2), (3)), t2(id) as (VALUES (2), (NULL)) "
+                + "select id, id in (select id from t2) as marker from t1")
+        .withHook(Hook.PROGRAM, (Consumer<Holder<Program>>) program -> {
+          program.set(Programs.sequence(subQuery, toCalc, enumerableImpl));
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[=($0, $1)], joinType=[left_mark])\n"
+                + "  EnumerableValues(tuples=[[{ 1 }, { 2 }, { 3 }]])\n"
+                + "  EnumerableCalc(expr#0=[{inputs}], id=[$t0])\n"
+                + "    EnumerableValues(tuples=[[{ 2 }, { null }]])\n")
+        .returnsUnordered(
+            "id=1; marker=null",
+            "id=2; marker=true",
+            "id=3; marker=null");
+
+    // case3: left mark join from uncorrelated IN subquery (0 null-safe key, 2 not null-safe key)
+    tester(false, new HrSchema())
+        .query(
+            "WITH t1(id, sal) as (VALUES (1, 10), (2, NULL), (3, NULL)), "
+                + "t2(id, sal) as (VALUES (1, 10), (2, NULL)) "
+                + "select id, sal, (id, sal) in (select id, sal from t2) as marker from t1")
+        .withHook(Hook.PROGRAM, (Consumer<Holder<Program>>) program -> {
+          program.set(Programs.sequence(subQuery, toCalc, enumerableImpl));
+        })
+        .explainHookMatches(
+            "EnumerableHashJoin(condition=[AND(=($0, $2), =($1, $3))], joinType=[left_mark])\n"
+                + "  EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }, { 3, null }]])\n"
+                + "  EnumerableCalc(expr#0..1=[{inputs}], proj#0..1=[{exprs}])\n"
+                + "    EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }]])\n")
+        .returnsUnordered(
+            "id=1; sal=10; marker=true",
+            "id=2; sal=null; marker=null",
+            "id=3; sal=null; marker=false");
+
+    // case4: left mark join from correlated IN subquery (1 null-safe key, 1 not null-safe key)
+    tester(false, new HrSchema())
+        .query(
+            "WITH t1(id, sal) as (VALUES (1, 10), (2, 20), (3, NULL)), "
+                + "t2(id, sal) as (VALUES (1, 10), (2, NULL)) "
+                + "select id, sal in (select sal from t2 where t1.id = t2.id) as marker from t1")
+        .withHook(Hook.PROGRAM, (Consumer<Holder<Program>>) program -> {
+          program.set(Programs.sequence(subQuery, topDownDecorrelator, toCalc, enumerableImpl));
+        })
+        .explainHookMatches(
+            "EnumerableCalc(expr#0..2=[{inputs}], id=[$t0], marker=[$t2])\n"
+                + "  EnumerableHashJoin(condition=[AND(=($1, $2), IS NOT DISTINCT FROM($0, $3))], joinType=[left_mark])\n"
+                + "    EnumerableValues(tuples=[[{ 1, 10 }, { 2, 20 }, { 3, null }]])\n"
+                + "    EnumerableCalc(expr#0..1=[{inputs}], EXPR$1=[$t1], EXPR$0=[$t0])\n"
+                + "      EnumerableValues(tuples=[[{ 1, 10 }, { 2, null }]])\n")
+        .returnsUnordered(
+            "id=1; marker=true",
+            "id=2; marker=null",
+            "id=3; marker=false");
+
+    // case5: left mark join from correlated SOME subquery (1 null-safe key, and non-equi predicate)
+    tester(false, new HrSchema())
+        .query(
+            "WITH t1(id, sal) as (VALUES (1, 10), (2, 20), (NULL, 30)), "
+                + "t2(id, sal) as (VALUES (1, 9), (2, NULL), (NULL, 31)) "
+                + "select id, sal < SOME(select sal from t2 where t1.id = t2.id or t1.id is null) "
+                + "as marker from t1")
+        .withHook(Hook.PROGRAM, (Consumer<Holder<Program>>) program -> {
+          program.set(Programs.sequence(subQuery, topDownDecorrelator, toCalc, enumerableImpl));
+        })
+        .explainHookMatches(
+            "EnumerableCalc(expr#0..2=[{inputs}], id=[$t0], marker=[$t2])\n"
+                + "  EnumerableHashJoin(condition=[AND(IS NOT DISTINCT FROM($0, $3), <($1, $2))], joinType=[left_mark])\n"
+                + "    EnumerableValues(tuples=[[{ 1, 10 }, { 2, 20 }, { null, 30 }]])\n"
+                + "    EnumerableCalc(expr#0..2=[{inputs}], EXPR$1=[$t1], EXPR$00=[$t2])\n"
+                + "      EnumerableNestedLoopJoin(condition=[OR(=($2, $0), IS NULL($2))], joinType=[inner])\n"
+                + "        EnumerableValues(tuples=[[{ 1, 9 }, { 2, null }, { null, 31 }]])\n"
+                + "        EnumerableCalc(expr#0..1=[{inputs}], EXPR$0=[$t0])\n"
+                + "          EnumerableValues(tuples=[[{ 1, 10 }, { 2, 20 }, { null, 30 }]])\n")
+        .returnsUnordered(
+            "id=1; marker=false",
+            "id=2; marker=null",
+            "id=null; marker=true");
+  }
+
+  private CalciteAssert.AssertThat tester(boolean forceDecorrelate,
+      Object schema) {
+    return CalciteAssert.that()
+        .with(CalciteConnectionProperty.LEX, Lex.JAVA)
+        .with(CalciteConnectionProperty.FORCE_DECORRELATE, forceDecorrelate)
+        .withSchema("s", new ReflectiveSchemaWithoutRowCount(schema));
+  }
+}

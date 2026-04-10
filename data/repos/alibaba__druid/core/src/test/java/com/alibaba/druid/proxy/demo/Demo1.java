@@ -1,0 +1,45 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.proxy.demo;
+
+import com.alibaba.druid.stat.JdbcStatManager;
+import org.junit.jupiter.api.Test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class Demo1 {
+    @Test
+    public void test_0() throws Exception {
+        JdbcStatManager.getInstance().reset(); // 重置计数器
+
+        assertEquals(0, JdbcStatManager.getInstance().getConnectionStat().getConnectCount());
+        assertEquals(0, JdbcStatManager.getInstance().getConnectionStat().getCloseCount());
+
+        String url = "jdbc:wrap-jdbc:filters=default:name=preCallTest:jdbc:derby:memory:Demo1;create=true";
+        Connection conn = DriverManager.getConnection(url);
+
+        assertEquals(1, JdbcStatManager.getInstance().getConnectionStat().getConnectCount());
+        assertEquals(0, JdbcStatManager.getInstance().getConnectionStat().getCloseCount());
+
+        conn.close();
+
+        assertEquals(1, JdbcStatManager.getInstance().getConnectionStat().getConnectCount());
+        assertEquals(1, JdbcStatManager.getInstance().getConnectionStat().getCloseCount());
+    }
+}

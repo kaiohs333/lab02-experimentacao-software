@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+crazycodeboy/react-native-splash-screen,5667,1105,2016-09-14T10:43:55Z,12,12,72,2.5,3.4167,2.9683,1.0,1.25,0.4523,0.5,2.0,2.6968,13.5,20.5,18.7447

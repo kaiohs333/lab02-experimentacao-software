@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-cloud/spring-cloud-gateway,4842,3433,2016-11-16T21:42:51Z,45,1244,15610,5.0,6.8424,7.2966,1.0,1.3625,0.7692,0.0,16.5675,139.3964,18.0,34.3891,49.8986

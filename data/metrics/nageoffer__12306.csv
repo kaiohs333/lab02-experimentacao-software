@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+nageoffer/12306,3509,342,2023-05-30T04:08:28Z,0,418,12874,3.0,5.0478,6.3776,1.0,1.2033,0.5577,0.0,2.7105,11.6644,9.0,20.7177,44.7994

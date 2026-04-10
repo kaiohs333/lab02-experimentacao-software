@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+code4craft/tiny-spring,4089,1806,2014-01-10T16:37:57Z,0,106,874,2.0,3.0849,3.2253,1.0,1.1509,0.4092,0.0,2.3679,6.3145,11.0,14.5566,14.1462

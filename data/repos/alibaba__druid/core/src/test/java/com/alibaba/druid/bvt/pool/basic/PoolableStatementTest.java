@@ -1,0 +1,59 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.pool.basic;
+
+import com.alibaba.druid.mock.MockStatement;
+import com.alibaba.druid.pool.DruidPooledStatement;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class PoolableStatementTest {
+    protected Statement raw;
+    protected DruidPooledStatement stmt;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        raw = new MockStatement(null);
+        stmt = new DruidPooledStatement(null, raw) {
+            protected SQLException checkException(Throwable error) throws SQLException {
+                if (error instanceof SQLException) {
+                    return (SQLException) error;
+                }
+
+                return new SQLException(error);
+            }
+        };
+    }
+
+    @AfterEach
+    protected void tearDown() throws Exception {
+    }
+
+    @Test
+    public void test_basic() throws Exception {
+        assertEquals(raw, stmt.getStatement());
+        assertEquals(null, stmt.getPoolableConnection());
+        assertEquals(null, stmt.getConnection());
+        assertEquals(false, stmt.isPoolable());
+        stmt.toString();
+    }
+}

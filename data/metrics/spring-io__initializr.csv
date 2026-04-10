@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-io/initializr,3659,1796,2013-06-07T16:02:22Z,19,749,18781,4.0,5.8545,5.4927,1.0,1.263,0.6239,1.0,35.6449,179.9981,24.0,44.8051,68.2323

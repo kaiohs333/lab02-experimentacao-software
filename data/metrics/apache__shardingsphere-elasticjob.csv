@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/shardingsphere-elasticjob,8221,3258,2015-09-11T11:28:52Z,31,596,12714,4.0,5.4849,5.1682,1.0,1.1544,0.5018,0.0,3.193,12.5652,13.0,26.1628,34.991

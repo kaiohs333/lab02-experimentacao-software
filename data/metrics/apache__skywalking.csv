@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/skywalking,24765,6640,2015-11-07T03:30:36Z,63,3465,58421,4.0,6.0952,7.2439,1.0,1.3856,0.7982,0.0,6.8248,31.4599,15.0,35.6144,60.4661

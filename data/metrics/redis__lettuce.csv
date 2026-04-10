@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+redis/lettuce,5728,1072,2014-05-10T13:08:46Z,146,2459,99247,4.0,6.4311,8.3099,1.0,1.3652,0.9133,0.0,146.6023,3206.6901,23.0,56.3863,130.1782

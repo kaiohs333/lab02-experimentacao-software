@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+DiUS/java-faker,4925,865,2011-06-06T01:01:21Z,0,225,1168,4.0,4.1156,6.3825,1.0,1.4489,0.4985,0.0,40.7467,391.2062,17.0,29.8222,49.6009

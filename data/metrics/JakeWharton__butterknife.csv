@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JakeWharton/butterknife,25413,4565,2013-03-05T08:18:59Z,0,272,755,2.0,3.9743,6.4855,1.0,1.2353,0.7109,0.0,10.4816,75.8065,8.0,28.3529,91.9892

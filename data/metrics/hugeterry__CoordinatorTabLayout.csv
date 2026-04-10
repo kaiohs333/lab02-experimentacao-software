@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+hugeterry/CoordinatorTabLayout,4183,582,2017-01-27T13:40:28Z,0,17,128,3.0,5.2941,5.5651,1.0,1.4118,0.5073,0.0,9.4118,32.7549,11.0,27.8235,41.9304

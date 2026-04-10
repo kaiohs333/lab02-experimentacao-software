@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+CaffeineMC/sodium,5512,907,2020-02-01T03:04:09Z,40,748,6348,4.0,6.2433,6.7677,1.0,1.5147,2.3928,1.0,17.1965,71.2923,18.0,40.988,64.8361

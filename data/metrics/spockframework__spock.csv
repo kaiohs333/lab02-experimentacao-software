@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spockframework/spock,3625,480,2010-12-12T19:02:34Z,28,734,16699,4.0,5.5899,6.837,1.0,1.4768,1.1367,1.0,34.3951,184.2165,15.0,35.2507,58.461

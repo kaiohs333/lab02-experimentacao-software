@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/jmeter,9290,2272,2010-05-26T23:38:07Z,10,1709,73746,4.0,5.5278,5.9628,2.0,1.8882,1.2921,3.0,62.2235,381.9106,34.0,74.2955,115.6363

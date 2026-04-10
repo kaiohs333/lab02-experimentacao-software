@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mock-server/mockserver,4860,1100,2013-02-26T06:09:52Z,0,1109,14718,5.0,7.2714,7.7588,1.0,1.6249,1.0045,1.0,95.8224,1163.3499,27.0,58.7322,109.4511

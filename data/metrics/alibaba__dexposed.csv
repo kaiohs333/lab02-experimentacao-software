@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/dexposed,4518,1062,2015-06-30T02:59:16Z,0,36,945,2.0,2.9167,3.2371,1.0,1.6944,1.3484,0.0,82.8333,424.4143,19.0,67.0556,157.8153

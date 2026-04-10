@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/agera,7134,630,2015-12-17T13:22:58Z,16,290,4427,4.0,6.3276,6.6857,1.0,1.2414,0.5362,0.0,14.8448,106.4947,13.0,37.5759,69.1467

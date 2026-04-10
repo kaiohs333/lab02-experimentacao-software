@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+puniverse/quasar,4565,567,2013-03-27T14:51:24Z,18,1349,27552,2.0,3.4329,4.969,1.0,1.5152,1.2365,0.0,35.997,433.6806,12.0,39.1179,92.1158

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+flutter-webrtc/flutter-webrtc,4452,1351,2018-03-07T02:26:03Z,138,90,735,3.0,6.6556,11.5585,1.0,1.2222,0.6833,0.0,40.0,234.1539,16.5,93.9444,264.0223

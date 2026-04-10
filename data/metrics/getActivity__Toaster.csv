@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+getActivity/Toaster,3480,426,2018-09-16T05:28:57Z,38,36,566,3.0,4.5833,4.4296,1.0,1.3333,0.6761,0.5,40.25,109.9294,20.0,41.4722,52.1018

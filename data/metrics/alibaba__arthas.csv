@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/arthas,37214,7636,2018-08-29T17:15:57Z,69,1343,15485,3.0,4.6672,5.7926,1.0,1.3634,0.7549,0.0,30.1988,149.8698,20.0,48.8377,89.2501

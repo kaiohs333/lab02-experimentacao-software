@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+square/otto,5135,832,2012-06-27T19:06:49Z,0,85,822,1.0,2.4353,3.1299,1.0,1.3882,0.8742,0.0,3.5529,14.621,8.0,23.3765,45.8115

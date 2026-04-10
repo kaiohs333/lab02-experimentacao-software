@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+facebook/stetho,12701,1117,2015-01-22T22:34:10Z,13,588,3953,3.0,4.3793,5.3724,1.0,1.4235,1.2489,0.0,7.4966,31.2481,10.0,32.7228,54.8203

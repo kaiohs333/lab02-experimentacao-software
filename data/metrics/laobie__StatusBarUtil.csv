@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+laobie/StatusBarUtil,8771,1714,2016-02-15T03:06:06Z,0,33,326,3.0,4.1515,3.5278,1.0,1.5455,0.8326,0.0,22.5455,124.493,11.0,31.3939,70.3251

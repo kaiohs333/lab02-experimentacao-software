@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/doris,15157,3742,2017-08-10T12:13:30Z,83,9407,204742,5.0,8.5364,19.9577,1.0,1.6522,1.0474,1.0,124.9693,3024.5929,26.0,74.3553,189.0227

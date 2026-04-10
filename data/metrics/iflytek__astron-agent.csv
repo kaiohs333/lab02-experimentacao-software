@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+iflytek/astron-agent,10732,1128,2025-09-19T08:46:01Z,12,1466,25366,4.0,6.1589,8.781,1.0,1.0641,0.2814,0.0,24.5593,294.03,12.0,50.1849,152.9417

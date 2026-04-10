@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+strimzi/strimzi-kafka-operator,5752,1469,2016-05-06T08:52:33Z,170,1524,49448,7.0,10.9783,13.0087,1.0,1.4816,0.8539,1.0,45.3609,279.2223,33.0,81.0932,146.0472

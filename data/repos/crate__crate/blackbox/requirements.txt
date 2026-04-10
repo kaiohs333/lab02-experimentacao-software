@@ -1,0 +1,22 @@
+# don't pin crate version numbers so the latest will always be pulled when you
+# set up your environment from scratch
+
+crash>=0.25.0
+crate
+asyncpg>=0.27.0
+cr8>=0.19.1
+tqdm>=4.66.4
+pycodestyle==2.4.0
+zc.customdoctests==1.0.1
+minio>=7.2.19
+pyjnius
+
+# used for dns-discovery tests
+dnslib
+
+# Documentation
+crate-docs-theme>=0.42.0
+sphinx-csv-filter>=0.4.3
+
+# Documentation: local development
+sphinx-autobuild

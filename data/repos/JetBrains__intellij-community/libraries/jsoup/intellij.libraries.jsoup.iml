@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="jsoup" type="repository">
+        <properties maven-id="org.jsoup:jsoup:1.21.2">
+          <verification>
+            <artifact url="file://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.21.2/jsoup-1.21.2.jar">
+              <sha256sum>f05496e255734759f0d4b5632da7b24f81313147c78c69e90ad045d096191344</sha256sum>
+            </artifact>
+          </verification>
+        </properties>
+        <ANNOTATIONS>
+          <root url="file://$MODULE_DIR$/../../lib/annotations/jsoup" />
+        </ANNOTATIONS>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.21.2/jsoup-1.21.2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.21.2/jsoup-1.21.2-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.21.2/jsoup-1.21.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

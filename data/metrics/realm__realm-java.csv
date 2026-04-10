@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+realm/realm-java,11489,1754,2012-04-20T09:18:42Z,0,1912,32262,2.0,4.3274,6.8811,1.0,1.2103,0.7101,0.0,51.7484,656.6609,9.0,57.6187,261.1158

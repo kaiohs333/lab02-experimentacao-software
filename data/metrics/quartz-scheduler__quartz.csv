@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+quartz-scheduler/quartz,6708,1995,2016-03-07T14:05:37Z,8,506,29884,3.0,5.5791,6.4022,1.0,1.4545,0.8484,1.0,124.5791,820.191,24.5,69.9486,178.7605

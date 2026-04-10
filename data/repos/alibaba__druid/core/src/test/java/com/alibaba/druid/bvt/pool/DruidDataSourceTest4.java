@@ -1,0 +1,119 @@
+package com.alibaba.druid.bvt.pool;
+
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.ExceptionSorter;
+import com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.sql.SQLException;
+import java.util.Properties;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class DruidDataSourceTest4 {
+    private DruidDataSource dataSource;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        dataSource = new DruidDataSource();
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setTestOnBorrow(false);
+        dataSource.setInitialSize(1);
+    }
+
+    @AfterEach
+    protected void tearDown() throws Exception {
+        dataSource.close();
+    }
+
+    @Test
+    public void test_getTransactionThresholdMillis() {
+        assertEquals(0, dataSource.getTransactionThresholdMillis());
+
+        dataSource.setTransactionThresholdMillis(100);
+
+        assertEquals(100, dataSource.getTransactionThresholdMillis());
+    }
+
+    @Test
+    public void test_getTransactionHistogramRanges() {
+        assertNotNull(dataSource.getTransactionHistogramRanges());
+    }
+
+    @Test
+    public void test_getTransactionHistogramRanges_1() {
+        assertEquals(6, dataSource.getTransactionHistogramRanges().length);
+    }
+
+    @Test
+    public void test_setValidConnectionCheckerClassName() throws Exception {
+        assertNull(dataSource.getValidConnectionChecker());
+        dataSource.setValidConnectionCheckerClassName(MySqlValidConnectionChecker.class.getName());
+        assertNotNull(dataSource.getValidConnectionChecker());
+    }
+
+    @Test
+    public void test_setMinIdle() throws Exception {
+        assertEquals(0, dataSource.getMinIdle());
+        dataSource.init();
+        dataSource.setMinIdle(1);
+        assertEquals(1, dataSource.getMinIdle());
+    }
+
+    @Test
+    public void test_setMinIdle_error() throws Exception {
+        assertEquals(0, dataSource.getMinIdle());
+        dataSource.init();
+        Exception error = null;
+        try {
+            dataSource.setMinIdle(100);
+        } catch (Exception e) {
+            error = e;
+        }
+        assertNotNull(error);
+        assertEquals(0, dataSource.getMinIdle());
+    }
+
+    @Test
+    public void test_setExceptionSorter_error() throws Exception {
+        dataSource.setExceptionSorter("xx");
+    }
+
+    @Test
+    public void test_setExceptionSorter_error2() throws Exception {
+        Exception error = null;
+        try {
+            dataSource.setExceptionSorter(MyExceptionSorter.class.getName());
+        } catch (Exception e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+
+    @Test
+    public void test_getParentLogger() throws Exception {
+        Exception error = null;
+        try {
+            dataSource.getParentLogger();
+        } catch (Exception e) {
+            error = e;
+        }
+        assertNotNull(error);
+    }
+
+    private class MyExceptionSorter implements ExceptionSorter {
+        @Override
+        public boolean isExceptionFatal(SQLException e) {
+            return false;
+        }
+
+        @Override
+        public void configFromProperties(Properties properties) {
+            // TODO Auto-generated method stub
+
+        }
+
+    }
+}

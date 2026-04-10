@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+liquibase/liquibase,5462,1938,2011-07-08T20:08:20Z,107,1734,19366,4.0,6.9296,7.7887,2.0,1.7924,0.9245,3.0,66.1269,563.3782,24.0,57.1684,110.7267

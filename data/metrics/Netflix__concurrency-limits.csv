@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/concurrency-limits,3546,325,2017-12-11T19:32:41Z,103,128,1662,3.0,4.6094,4.5976,1.0,1.2812,0.7092,1.0,8.3828,21.3095,20.0,40.2578,42.5743

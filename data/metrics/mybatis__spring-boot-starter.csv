@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mybatis/spring-boot-starter,4249,1801,2015-09-25T13:05:15Z,34,175,3014,4.0,4.5371,6.4074,1.0,1.2229,0.5159,0.0,16.1771,153.0538,8.0,25.3371,65.9311

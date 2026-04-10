@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Angel-ML/angel,6787,1591,2017-04-25T05:57:43Z,20,1938,48765,5.0,7.4757,10.0093,2.0,1.7384,0.8641,0.0,63.4309,598.969,34.0,106.8844,500.0846

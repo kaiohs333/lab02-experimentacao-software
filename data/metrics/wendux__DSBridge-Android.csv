@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+wendux/DSBridge-Android,3880,648,2017-01-02T11:58:53Z,2,47,118,2.0,2.9787,3.8981,1.0,1.1064,0.3117,0.0,15.9787,72.1904,6.0,39.1702,113.013

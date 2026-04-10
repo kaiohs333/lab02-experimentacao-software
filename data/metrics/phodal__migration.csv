@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+phodal/migration,3477,569,2020-01-08T02:11:38Z,0,12,11,1.0,1.4167,0.6686,1.0,1.0,0.0,0.0,0.0833,0.2887,8.0,8.4167,3.2039

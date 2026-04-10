@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+quarkusio/quarkus,15560,3113,2018-07-06T00:44:20Z,465,32792,164457,4.0,5.1772,6.3775,1.0,1.2286,0.6613,0.0,53.4763,6229.1616,11.0,28.9417,72.8785

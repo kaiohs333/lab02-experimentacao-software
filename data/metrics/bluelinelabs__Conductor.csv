@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bluelinelabs/Conductor,3900,339,2016-03-16T18:42:41Z,36,86,920,3.0,5.4767,6.2019,1.0,1.3488,0.6645,0.0,71.3372,406.3386,20.0,62.6163,133.145

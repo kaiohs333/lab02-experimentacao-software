@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JodaOrg/joda-time,4989,1015,2011-05-16T16:49:57Z,51,557,45675,6.0,8.5799,8.1888,2.0,2.2837,1.8724,10.0,295.3788,784.5639,56.0,164.5099,247.512

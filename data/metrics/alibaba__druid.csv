@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/druid,28212,8602,2011-11-03T05:12:51Z,52,5969,70753,4.0,5.2541,12.9566,2.0,1.6527,0.9211,0.0,229.3545,5182.8546,21.0,58.615,266.9317

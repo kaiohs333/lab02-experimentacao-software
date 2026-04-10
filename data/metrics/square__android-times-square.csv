@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+square/android-times-square,4427,1182,2013-01-30T20:28:27Z,0,47,401,4.0,4.5532,5.6561,1.0,1.234,0.5976,0.0,25.8723,134.5085,8.0,48.6383,123.4878

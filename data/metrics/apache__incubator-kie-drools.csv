@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/incubator-kie-drools,6231,2579,2011-02-18T08:37:05Z,6,11936,240315,4.0,6.5594,8.9379,1.0,1.5889,1.2904,1.0,65.0603,699.2371,21.0,64.5132,425.8747

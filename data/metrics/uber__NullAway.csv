@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+uber/NullAway,4025,330,2017-09-01T17:35:57Z,38,586,10366,2.0,4.7526,9.1296,1.0,1.2014,0.4826,0.0,58.2884,361.8247,11.0,43.5495,109.5771

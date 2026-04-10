@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+nostra13/Android-Universal-Image-Loader,17056,6040,2011-11-27T18:48:23Z,0,140,5310,3.0,4.8643,4.8772,1.0,1.5857,0.9595,0.5,28.8429,99.819,28.5,53.1,91.2953

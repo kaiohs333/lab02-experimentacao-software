@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+getActivity/AndroidProject,6865,1412,2018-10-23T10:30:55Z,18,367,4866,5.0,7.9155,8.5725,1.0,2.2534,1.7473,1.0,19.8529,57.857,21.0,59.0572,95.5868

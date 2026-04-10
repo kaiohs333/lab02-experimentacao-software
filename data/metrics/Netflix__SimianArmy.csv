@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/SimianArmy,7984,1123,2012-07-06T22:00:05Z,4,305,8885,4.0,5.8459,7.3134,1.0,1.423,0.7747,3.0,25.1607,112.0055,26.0,52.6426,75.252

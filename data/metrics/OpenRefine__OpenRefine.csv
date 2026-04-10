@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+OpenRefine/OpenRefine,11788,2132,2012-10-15T02:22:48Z,76,1408,34782,5.0,6.4957,6.3582,1.0,1.7095,0.9174,1.0,13.1491,59.2221,26.0,52.4815,97.8541

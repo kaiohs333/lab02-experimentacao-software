@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apolloconfig/apollo,29767,10200,2016-03-04T10:24:23Z,43,786,14827,6.0,7.4415,6.9959,1.0,1.2366,0.6658,0.0,15.4377,58.4009,27.0,46.5445,56.1932

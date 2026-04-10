@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+changmingxie/tcc-transaction,5776,2769,2015-12-05T04:27:53Z,8,519,2338,4.0,5.2543,5.6141,1.0,1.3083,0.8014,1.0,29.736,99.7702,16.0,45.5954,124.7879

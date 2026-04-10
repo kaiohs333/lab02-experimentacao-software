@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+wildfirechat/im-server,8463,1897,2019-01-23T15:21:28Z,115,1036,22003,3.0,6.584,8.6245,1.0,1.5463,2.4965,1.0,112.3041,470.5,22.0,155.7838,1514.4783

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/physical-web,5981,651,2014-09-30T18:32:14Z,17,156,3039,3.0,4.7885,5.5684,1.0,1.2885,0.5566,0.0,26.7115,209.175,14.5,47.9551,78.3191

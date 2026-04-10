@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+raphw/byte-buddy,6788,845,2013-11-25T19:38:03Z,312,6242,95197,4.0,5.9673,7.7903,1.0,1.5828,1.8554,0.0,15.206,291.2471,13.0,46.7791,187.4193

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/spring-cloud-alibaba,29081,8515,2017-12-01T20:49:15Z,51,594,12856,5.0,5.936,4.9778,1.0,1.1094,0.353,0.0,29.9343,311.0864,15.5,32.7761,67.7824

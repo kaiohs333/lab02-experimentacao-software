@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+wequick/Small,5042,1102,2015-11-27T11:37:20Z,25,185,1471,2.0,3.8,4.9528,1.0,1.4757,0.828,0.0,20.1676,143.2983,6.0,41.7622,110.8118

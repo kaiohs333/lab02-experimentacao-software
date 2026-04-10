@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+junit-team/junit-framework,6992,1663,2015-01-11T19:06:10Z,107,3588,60593,3.0,4.6784,5.4843,1.0,1.3018,0.9827,0.0,35.7104,734.4613,10.0,28.8219,68.0151

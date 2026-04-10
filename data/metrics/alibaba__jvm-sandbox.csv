@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/jvm-sandbox,6959,1588,2017-08-03T02:55:31Z,13,435,5994,2.0,3.4828,4.4032,1.0,1.3264,0.8281,0.0,12.3609,57.5955,12.0,33.1195,58.3528

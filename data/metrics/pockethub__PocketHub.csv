@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+pockethub/PocketHub,9381,3422,2011-09-08T16:52:50Z,1,212,5212,5.0,6.5755,5.3413,1.0,1.4811,0.7633,0.0,9.0425,35.2517,21.0,32.9245,40.6016

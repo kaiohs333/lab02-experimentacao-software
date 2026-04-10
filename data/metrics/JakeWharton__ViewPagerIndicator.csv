@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JakeWharton/ViewPagerIndicator,10086,3954,2011-08-04T17:13:44Z,0,66,369,5.5,5.4394,4.6876,3.0,2.2424,0.8604,0.0,29.2727,127.3397,13.0,44.6515,100.5477

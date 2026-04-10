@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Alluxio/alluxio,7173,2948,2012-12-21T17:43:46Z,61,4027,120630,5.0,6.9752,8.4278,1.0,1.4817,1.4817,1.0,30.6588,238.1727,30.0,62.6891,120.3134

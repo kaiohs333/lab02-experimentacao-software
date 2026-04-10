@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/nifi,6025,2938,2014-12-12T08:00:05Z,0,10458,230281,4.0,7.4007,11.2679,1.0,1.4869,0.8625,1.0,60.1538,1168.9509,25.0,65.039,145.7061

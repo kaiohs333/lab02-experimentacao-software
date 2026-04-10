@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+robinhood/ticker,4383,462,2016-07-15T21:37:52Z,9,31,513,4.0,4.6129,4.7587,1.0,1.3226,0.7018,0.0,27.6129,110.131,27.0,51.0,75.5892

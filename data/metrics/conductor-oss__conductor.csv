@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+conductor-oss/conductor,31567,841,2023-12-08T06:06:09Z,37,1347,27238,6.0,7.4633,7.841,1.0,1.2264,0.5011,0.0,60.7728,334.4146,30.0,70.7877,132.3917

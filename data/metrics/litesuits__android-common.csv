@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+litesuits/android-common,3630,1078,2014-05-29T08:08:00Z,0,85,5347,2.0,3.5176,3.5777,1.0,1.2471,0.5957,1.0,124.3529,700.4437,35.0,76.6941,139.3266

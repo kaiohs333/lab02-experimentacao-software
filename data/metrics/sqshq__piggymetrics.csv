@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+sqshq/piggymetrics,13882,6385,2015-03-29T17:56:31Z,2,99,178,5.0,6.0404,4.3423,1.0,1.0606,0.2398,0.0,3.8283,10.0793,11.0,19.0,20.054

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+antlr/antlr4,18807,3426,2010-02-04T01:36:28Z,31,662,16900,3.0,5.8066,7.3267,1.0,1.8112,1.16,0.0,48.3021,192.8634,20.0,61.9668,114.8139

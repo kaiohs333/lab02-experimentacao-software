@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+openzipkin/zipkin,17418,3101,2012-06-06T18:26:16Z,98,821,7133,5.0,6.5347,5.4556,1.0,1.6395,1.7528,1.0,19.3544,73.7365,23.0,47.5238,65.5427

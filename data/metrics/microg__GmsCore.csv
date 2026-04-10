@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+microg/GmsCore,12711,2664,2014-04-23T19:28:47Z,45,1999,31440,5.0,6.025,4.9464,2.0,1.7279,0.8853,0.0,13.8754,67.083,13.0,29.3017,52.4364

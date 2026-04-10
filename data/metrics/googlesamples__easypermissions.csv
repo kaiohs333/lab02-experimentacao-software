@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+googlesamples/easypermissions,9899,1463,2015-12-22T18:05:53Z,12,33,412,8.0,8.9394,5.8038,1.0,1.4848,0.6185,6.0,12.2121,21.7741,28.0,51.6667,63.3451

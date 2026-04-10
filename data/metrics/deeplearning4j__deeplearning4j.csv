@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+deeplearning4j/deeplearning4j,14214,3844,2013-11-27T02:03:28Z,0,5707,213282,7.0,8.464,9.6247,2.0,2.2139,19.3791,6.0,54436.2826,2360724.6678,28.0,99.3785,883.7416

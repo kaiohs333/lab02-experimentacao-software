@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/iceberg,8667,3105,2018-11-19T16:26:46Z,32,4865,166919,6.0,8.6008,8.4534,1.0,1.6341,1.5877,1.0,36.9102,177.5749,31.0,69.3157,108.9363

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+TNG/ArchUnit,3642,332,2017-04-21T08:39:20Z,43,3673,16240,2.0,3.6099,6.9321,1.0,1.2744,1.0465,0.0,39.4931,483.8235,6.0,21.8195,61.5856

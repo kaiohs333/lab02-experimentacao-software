@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+gunnarmorling/1brc,7987,2212,2023-12-28T09:13:24Z,0,600,7856,3.0,3.2983,2.6244,1.0,1.09,0.3814,1.0,7.58,23.5269,43.0,89.0517,106.2934

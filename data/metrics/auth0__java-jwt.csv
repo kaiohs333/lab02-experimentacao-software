@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+auth0/java-jwt,6207,948,2014-03-07T15:06:11Z,46,86,1657,3.5,5.6628,5.4828,1.0,1.6279,1.32,1.0,142.7442,531.4459,32.5,103.7674,175.5132

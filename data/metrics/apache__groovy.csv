@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/groovy,5438,1913,2015-04-16T07:00:05Z,0,2834,111176,3.0,5.3553,10.1748,1.0,2.1337,4.1299,1.0,424.8641,12034.8261,19.0,71.7781,256.3849

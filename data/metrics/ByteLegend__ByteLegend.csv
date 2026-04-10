@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ByteLegend/ByteLegend,3705,146,2021-02-01T10:11:30Z,0,295,5422,7.0,6.9797,2.8163,1.0,1.0034,0.0582,20.0,727.8441,2317.1833,140.0,352.6508,867.5817

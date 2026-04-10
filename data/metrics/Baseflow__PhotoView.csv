@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Baseflow/PhotoView,18859,3923,2012-07-17T16:39:00Z,5,45,383,3.0,4.7333,5.5449,1.0,1.3556,0.5703,0.0,24.6,157.2585,14.0,39.8222,93.5468

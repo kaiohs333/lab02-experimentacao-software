@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+charles2gan/GDA-android-reversing-Tool,4691,561,2017-10-31T08:18:29Z,40,16,66,2.5,2.5625,1.4592,1.0,1.0,0.0,0.0,57.375,228.168,21.5,35.4375,48.2341

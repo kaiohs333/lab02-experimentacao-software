@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+thinkaurelius/titan,5237,999,2012-02-25T22:53:53Z,0,1594,16140,3.0,5.8626,8.8588,1.0,1.3614,0.7851,1.0,20.5056,117.2321,14.0,44.6443,125.8081

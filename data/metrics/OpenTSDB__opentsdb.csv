@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+OpenTSDB/opentsdb,5064,1239,2010-08-27T02:05:20Z,27,958,28467,4.0,7.0866,7.589,1.0,1.2839,0.8015,0.0,64.8758,365.9834,23.0,109.2234,217.1297

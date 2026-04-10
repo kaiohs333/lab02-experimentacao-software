@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+bisq-network/bisq,5068,1287,2014-03-12T09:42:29Z,143,3716,59202,4.0,7.4357,9.4665,1.0,1.6908,1.0821,1.0,30.1574,368.13,19.0,48.1348,97.855

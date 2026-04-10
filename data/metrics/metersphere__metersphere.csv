@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+metersphere/metersphere,13045,2792,2020-02-03T02:06:12Z,183,3702,27284,3.0,6.6837,11.3681,1.0,1.2985,0.5474,0.0,446.2396,3759.1636,15.0,86.9676,205.3393

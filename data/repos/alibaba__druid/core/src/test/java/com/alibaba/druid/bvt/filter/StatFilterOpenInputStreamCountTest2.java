@@ -1,0 +1,105 @@
+package com.alibaba.druid.bvt.filter;
+
+import com.alibaba.druid.filter.FilterAdapter;
+import com.alibaba.druid.filter.FilterChain;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.proxy.jdbc.ResultSetProxy;
+import com.alibaba.druid.stat.JdbcSqlStat;
+import com.alibaba.druid.util.JdbcUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayInputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class StatFilterOpenInputStreamCountTest2 {
+    private DruidDataSource dataSource;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        dataSource = new DruidDataSource();
+
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setFilters("stat");
+        dataSource.setTestOnBorrow(false);
+        dataSource.getProxyFilters().add(new FilterAdapter() {
+            @Override
+            public java.io.InputStream resultSet_getAsciiStream(FilterChain chain, ResultSetProxy result,
+                                                                int columnIndex) throws SQLException {
+                return new ByteArrayInputStream(new byte[0]);
+            }
+
+            @Override
+            public java.io.InputStream resultSet_getAsciiStream(FilterChain chain, ResultSetProxy result,
+                                                                String columnLabel) throws SQLException {
+                return new ByteArrayInputStream(new byte[0]);
+            }
+
+        });
+        dataSource.init();
+    }
+
+    @AfterEach
+    protected void tearDown() throws Exception {
+        JdbcUtils.close(dataSource);
+    }
+
+    @Test
+    public void test_stat() throws Exception {
+        Connection conn = dataSource.getConnection();
+
+        String sql = "select 'x'";
+        PreparedStatement stmt = conn.prepareStatement("select 'x'");
+
+        JdbcSqlStat sqlStat = dataSource.getDataSourceStat().getSqlStat(sql);
+
+        assertEquals(0, sqlStat.getInputStreamOpenCount());
+
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        rs.getAsciiStream(1);
+        rs.getAsciiStream(2);
+        rs.close();
+        stmt.close();
+
+        conn.close();
+
+        assertEquals(2, sqlStat.getInputStreamOpenCount());
+
+        sqlStat.reset();
+        assertEquals(0, sqlStat.getInputStreamOpenCount());
+    }
+
+    @Test
+    public void test_stat_1() throws Exception {
+        Connection conn = dataSource.getConnection();
+
+        String sql = "select 'x'";
+        PreparedStatement stmt = conn.prepareStatement("select 'x'");
+
+        JdbcSqlStat sqlStat = dataSource.getDataSourceStat().getSqlStat(sql);
+
+        assertEquals(0, sqlStat.getInputStreamOpenCount());
+
+        ResultSet rs = stmt.executeQuery();
+        rs.next();
+        rs.getAsciiStream("1");
+        rs.getAsciiStream("2");
+        rs.getAsciiStream("3");
+        rs.close();
+        stmt.close();
+
+        conn.close();
+
+        assertEquals(3, sqlStat.getInputStreamOpenCount());
+
+        sqlStat.reset();
+        assertEquals(0, sqlStat.getInputStreamOpenCount());
+    }
+}

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+diffplug/spotless,5379,513,2015-04-27T19:10:58Z,52,937,13881,4.0,5.0395,4.1853,1.0,1.7343,1.2654,1.0,13.9146,95.1044,23.0,41.2316,52.4274

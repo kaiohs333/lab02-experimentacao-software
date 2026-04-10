@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/tsunami-security-scanner,8557,916,2020-06-03T16:20:00Z,1,298,5206,5.0,6.2282,6.1108,1.0,1.5268,0.9397,1.0,15.1208,53.54,13.0,30.4966,44.4806

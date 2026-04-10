@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+SeleniumHQ/selenium,34183,8667,2013-01-14T21:40:56Z,114,2085,35249,4.0,5.8168,7.0872,1.0,1.376,1.0481,1.0,33.5026,285.3402,20.0,47.7386,81.9213

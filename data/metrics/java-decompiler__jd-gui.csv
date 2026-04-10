@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+java-decompiler/jd-gui,15059,2476,2015-03-25T05:28:41Z,18,407,2697,3.0,4.5381,5.4305,1.0,2.4177,2.3389,1.0,11.1155,51.0733,17.0,47.4423,79.9642

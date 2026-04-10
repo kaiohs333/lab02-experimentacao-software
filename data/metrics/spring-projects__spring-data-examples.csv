@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-projects/spring-data-examples,5415,3414,2014-01-30T15:42:43Z,0,6659,16248,2.0,2.6331,1.6406,1.0,1.0062,0.089,0.0,0.4724,2.3162,4.0,7.748,7.086

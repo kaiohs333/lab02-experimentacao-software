@@ -1,0 +1,79 @@
+package com.alibaba.druid.bvt.pool.exception;
+
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.DruidPooledConnection;
+import com.alibaba.druid.pool.vendor.OceanBaseOracleExceptionSorter;
+import com.alibaba.druid.stat.JdbcStatManager;
+import com.alibaba.druid.test.util.OracleMockDriver;
+import com.alibaba.druid.util.JdbcUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class OceanBaseOracleExceptionSorterTest {
+    private DruidDataSource dataSource;
+
+    @BeforeEach
+    protected void setUp() throws Exception {
+        JdbcStatManager.getInstance().reset();
+        dataSource = new DruidDataSource();
+
+        dataSource.setExceptionSorter(new OceanBaseOracleExceptionSorter());
+
+        dataSource.setDriver(new OracleMockDriver());
+        dataSource.setUrl("jdbc:mock:xxx");
+        dataSource.setPoolPreparedStatements(true);
+        dataSource.setMaxOpenPreparedStatements(100);
+        dataSource.setFilters("log4j");
+    }
+
+        @AfterEach
+    protected void tearDown() throws Exception {
+        JdbcUtils.close(dataSource);
+    }
+
+    @Test
+    public void test_connect() throws Exception {
+        String sql = "SELECT 1";
+        {
+            DruidPooledConnection conn = dataSource.getConnection();
+
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.execute();
+            pstmt.close();
+            conn.close();
+        }
+
+        DruidPooledConnection conn = dataSource.getConnection();
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setFetchSize(1000);
+
+        SQLException exception = new SQLException("xx", "xxx", 28);
+        boolean fatal = false;
+        try {
+            conn.handleException(exception);
+        } catch (SQLException ex) {
+            fatal = true;
+        }
+        assertTrue(fatal);
+
+        pstmt.close();
+
+        SQLException commitError = null;
+        try {
+            conn.commit();
+        } catch (SQLException ex) {
+            commitError = ex;
+        }
+
+        assertNotNull(commitError);
+        assertSame(exception, commitError.getCause());
+
+        conn.close();
+    }
+}

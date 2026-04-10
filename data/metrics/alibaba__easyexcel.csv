@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/easyexcel,33769,7622,2018-02-06T03:14:08Z,14,560,10278,5.0,6.5696,6.0249,1.0,1.375,0.8345,1.0,32.025,355.6685,15.0,36.6875,65.1367

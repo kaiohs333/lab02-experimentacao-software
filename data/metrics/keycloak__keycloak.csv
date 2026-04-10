@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+keycloak/keycloak,33583,8175,2013-07-02T13:38:51Z,103,9752,189782,4.0,6.9519,8.3494,1.0,1.5483,1.0412,2.0,71.0318,964.4839,24.0,59.3506,114.869

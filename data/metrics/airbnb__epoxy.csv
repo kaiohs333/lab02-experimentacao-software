@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+airbnb/epoxy,8571,734,2016-08-08T23:05:11Z,78,637,11848,5.0,7.2276,6.3241,2.0,1.7771,1.0598,1.0,148.3909,309.5102,12.0,76.4301,105.3669

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/transmittable-thread-local,8270,1726,2013-10-13T08:48:33Z,58,155,5234,5.0,5.5871,3.7326,1.0,1.4323,1.0932,1.0,12.3548,38.2609,23.0,44.7226,66.3005

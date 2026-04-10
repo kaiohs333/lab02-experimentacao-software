@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+AutoMQ/automq,9628,674,2023-08-17T07:50:13Z,81,9321,225054,4.0,7.1798,12.0472,1.0,1.3459,0.8567,0.0,45.8948,594.9123,25.0,72.5662,178.4258

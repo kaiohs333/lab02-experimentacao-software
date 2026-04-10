@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+ffay/lanproxy,5857,1555,2016-11-20T08:12:10Z,1,63,422,3.0,4.2381,3.8884,1.0,1.1905,0.5034,0.0,8.2063,27.1698,23.0,42.3492,49.8479

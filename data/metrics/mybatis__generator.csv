@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mybatis/generator,5318,2491,2013-02-10T11:14:50Z,11,721,16504,5.0,6.656,6.1676,2.0,2.3592,1.5018,3.0,85.6338,456.8602,24.0,101.4827,323.4815

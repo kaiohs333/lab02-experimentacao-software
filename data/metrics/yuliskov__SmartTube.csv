@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+yuliskov/SmartTube,29104,1559,2020-07-28T12:53:52Z,980,3288,95804,4.0,6.6113,8.0568,1.0,1.5392,1.4519,1.0,66.3297,456.6507,21.0,74.2546,153.7429

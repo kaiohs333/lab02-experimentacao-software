@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/seatunnel,9202,2202,2017-08-05T09:14:47Z,53,5277,96312,5.0,6.8963,7.2677,1.0,1.375,0.7405,1.0,32.0409,392.1085,19.0,57.2268,171.0314

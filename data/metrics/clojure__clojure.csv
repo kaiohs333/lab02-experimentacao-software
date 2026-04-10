@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+clojure/clojure,10834,1457,2010-06-29T20:03:33Z,0,917,12966,0.0,3.5998,7.8743,1.0,1.4951,2.3427,0.0,130.2072,1974.7447,3.0,51.0949,255.9155

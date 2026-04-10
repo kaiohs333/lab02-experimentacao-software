@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+lecho/hellocharts-android,7795,1603,2014-10-12T09:12:37Z,14,153,1858,4.0,6.4248,6.5941,1.0,1.6667,0.9032,1.0,40.2941,150.0745,41.0,71.8627,93.3298

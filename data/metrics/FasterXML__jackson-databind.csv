@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+FasterXML/jackson-databind,3694,1474,2011-12-23T07:17:41Z,0,6064,59495,2.0,3.7737,5.8098,1.0,1.7279,1.9725,0.0,23.6014,294.9827,8.0,32.0376,85.6325

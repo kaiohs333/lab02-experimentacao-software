@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jOOQ/jOOQ,6685,1226,2011-04-17T10:43:33Z,122,3372,291426,7.0,9.7536,18.1385,1.0,1.7177,2.9833,3.0,1679.7284,43347.524,15.0,67.6409,299.0458

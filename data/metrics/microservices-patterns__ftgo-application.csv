@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+microservices-patterns/ftgo-application,3690,1401,2017-10-23T04:30:04Z,0,370,193,3.0,5.3459,5.5567,1.0,1.1892,0.6392,0.0,8.1919,31.0066,12.5,18.5622,23.0493

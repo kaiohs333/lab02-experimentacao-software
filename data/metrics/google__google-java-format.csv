@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/google-java-format,6096,917,2015-05-11T20:38:28Z,43,154,4421,4.0,6.2987,11.0354,1.0,1.461,0.8792,1.0,91.2468,497.4049,28.0,79.0519,254.4974

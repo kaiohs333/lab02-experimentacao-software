@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+NationalSecurityAgency/ghidra,66199,7294,2019-03-01T03:27:48Z,52,1632,59136,5.0,7.992,8.6885,1.0,1.7494,1.0336,1.0,78.3327,547.8728,21.5,72.1832,136.5798

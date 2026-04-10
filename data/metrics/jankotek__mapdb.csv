@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jankotek/mapdb,5035,881,2012-08-17T15:28:54Z,0,263,4692,2.0,3.2395,4.1157,1.0,2.0228,3.5532,0.0,81.8479,452.7589,18.0,76.7985,198.3105

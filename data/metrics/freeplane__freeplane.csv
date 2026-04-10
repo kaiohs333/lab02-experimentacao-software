@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+freeplane/freeplane,4021,475,2012-09-13T08:55:51Z,56,4109,37587,3.0,4.524,6.2886,1.0,1.4909,1.2012,1.0,45.9058,507.0348,18.0,47.5634,102.6758

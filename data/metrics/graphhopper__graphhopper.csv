@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+graphhopper/graphhopper,6380,1895,2012-02-18T19:57:38Z,46,1395,29025,4.0,6.8774,8.8802,1.0,1.2616,0.6857,0.0,31.7369,163.0388,27.0,74.2581,169.3831

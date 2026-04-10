@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/fastjson,25701,6446,2011-11-03T06:58:52Z,84,6327,15252,1.0,1.853,2.774,1.0,1.5042,0.713,0.0,126.1212,3281.9663,13.0,32.6373,156.1142

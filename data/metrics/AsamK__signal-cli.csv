@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+AsamK/signal-cli,4344,394,2015-05-11T10:49:42Z,110,524,791,4.0,7.1088,11.9664,1.0,1.542,2.0779,1.0,63.0,460.9293,18.0,56.8473,131.709

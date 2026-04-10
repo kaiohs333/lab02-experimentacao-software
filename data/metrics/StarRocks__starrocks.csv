@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+StarRocks/starrocks,11514,2377,2021-09-04T02:29:35Z,179,11147,171848,3.0,7.1657,16.5856,1.0,1.4558,1.028,0.0,134.2013,3428.8054,20.0,78.7101,198.577

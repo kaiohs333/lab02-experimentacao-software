@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+perwendel/spark,9665,1568,2011-05-05T11:52:05Z,0,221,6580,3.0,4.543,4.7342,1.0,1.2986,0.7813,0.0,47.1176,408.4721,20.0,43.3846,60.8114

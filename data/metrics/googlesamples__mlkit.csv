@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+googlesamples/mlkit,4164,3091,2020-05-28T21:40:38Z,1,197,3114,5.0,7.731,8.4867,1.0,1.5279,0.6742,0.0,9.5279,36.9693,25.0,54.0,73.9833

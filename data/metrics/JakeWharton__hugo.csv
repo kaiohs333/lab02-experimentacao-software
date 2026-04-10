@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+JakeWharton/hugo,7913,794,2013-11-25T09:16:40Z,0,7,2,7.0,5.7143,4.2314,1.0,1.1429,0.378,6.0,27.7143,43.5228,59.0,54.8571,50.2674

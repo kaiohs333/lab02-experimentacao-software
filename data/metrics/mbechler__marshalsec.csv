@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+mbechler/marshalsec,3665,682,2017-05-22T11:43:57Z,0,72,2063,6.0,7.2917,5.6405,1.0,1.8194,1.0254,1.0,14.5833,39.0351,15.5,30.75,47.3925

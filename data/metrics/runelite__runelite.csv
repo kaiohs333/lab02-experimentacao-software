@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+runelite/runelite,5331,5674,2016-04-30T20:48:02Z,0,4109,244197,0.0,3.3964,6.9599,1.0,1.211,0.7221,0.0,24.5461,845.6821,17.0,126.4967,1346.5335

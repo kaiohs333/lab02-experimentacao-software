@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/dubbo,41711,26529,2012-06-19T07:56:02Z,113,4966,105387,4.0,5.4444,5.822,1.0,1.2926,0.7019,1.0,45.7807,435.1725,20.0,51.6081,101.3248

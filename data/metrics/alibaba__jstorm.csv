@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/jstorm,3885,1777,2013-09-03T03:53:16Z,22,3956,50970,4.0,5.042,6.0865,1.0,1.4568,1.2935,1.0,42.3673,526.0129,25.0,74.8799,762.0013

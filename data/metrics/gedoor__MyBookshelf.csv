@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+gedoor/MyBookshelf,7624,1803,2018-06-12T03:48:07Z,165,669,6636,4.0,6.3363,7.7355,1.0,1.4694,0.8845,1.0,58.6622,338.6104,18.0,72.3094,198.2028

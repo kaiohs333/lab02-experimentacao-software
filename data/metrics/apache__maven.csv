@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/maven,5001,2843,2009-05-21T03:22:03Z,30,3755,108381,3.0,5.3148,7.1664,1.0,1.5348,0.8141,0.0,46.0016,579.8467,19.0,44.6221,91.0702

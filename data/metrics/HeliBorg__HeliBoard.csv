@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+HeliBorg/HeliBoard,4925,261,2022-03-09T08:38:32Z,62,240,6448,4.0,6.6417,9.0898,1.0,1.4625,0.914,1.0,74.5375,275.6061,42.0,94.4333,169.9205

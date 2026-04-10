@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+stanfordnlp/CoreNLP,10062,2718,2013-06-27T21:13:49Z,19,4305,132235,3.0,5.7298,7.6167,1.0,1.4611,1.4924,0.0,148.5786,1831.5545,26.0,129.5236,1010.2722

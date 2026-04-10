@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+Netflix/eureka,12697,3780,2012-07-26T22:23:07Z,152,747,10859,4.0,5.8461,6.4123,1.0,1.2691,0.7032,0.0,18.6131,134.1853,18.0,44.9518,83.4869

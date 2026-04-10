@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+etsy/AndroidStaggeredGrid,4771,1112,2013-12-09T19:43:45Z,7,36,861,3.0,5.8611,6.5864,1.5,1.8611,1.4173,0.5,155.8889,666.9732,27.5,111.3889,326.6939

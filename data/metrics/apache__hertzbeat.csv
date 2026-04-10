@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/hertzbeat,7139,1262,2022-02-04T14:48:56Z,7,1722,39759,5.0,7.0697,6.7842,1.0,1.2485,1.3724,0.0,13.0319,57.9551,20.0,47.367,101.8396

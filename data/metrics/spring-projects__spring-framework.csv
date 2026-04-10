@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+spring-projects/spring-framework,59785,38904,2010-12-08T04:04:45Z,359,18773,419861,3.0,5.225,6.7738,1.0,1.4614,1.3844,0.0,29.4998,274.1279,12.0,41.1295,105.5311

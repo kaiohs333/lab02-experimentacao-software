@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+tiann/epic,4543,818,2017-05-22T02:52:44Z,5,149,1429,3.0,3.2282,5.2878,1.0,1.6242,0.8259,1.0,30.396,219.899,12.0,34.4094,65.1892

@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+jenkinsci/jenkins,25132,9436,2010-11-22T21:21:23Z,483,4122,90500,4.0,6.2775,8.3644,2.0,1.934,1.7814,0.0,46.5197,909.944,16.0,45.3142,114.1324

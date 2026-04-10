@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+alibaba/UltraViewPager,4966,679,2017-03-29T13:31:53Z,10,24,698,2.0,5.2083,6.8524,1.0,1.375,0.4945,0.0,58.375,124.8821,13.5,63.25,101.1668

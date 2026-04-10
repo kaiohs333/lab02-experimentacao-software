@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dropbox/hackpad,3659,520,2015-08-14T02:32:17Z,0,619,30255,3.0,5.0792,7.1243,1.0,1.8061,1.361,1.0,152.2989,963.6455,33.0,141.7302,347.8068

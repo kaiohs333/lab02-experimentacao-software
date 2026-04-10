@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+apache/camel,6156,5096,2009-05-21T00:25:36Z,0,44662,1057068,3.0,4.8581,8.1474,1.0,1.6297,2.3915,1.0,80.6065,2245.6057,18.0,46.0927,139.3924

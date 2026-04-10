@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+dependency-check/DependencyCheck,7466,1394,2012-09-03T20:43:30Z,91,513,33933,5.0,6.7232,7.1587,2.0,1.7817,0.9474,3.0,64.0682,350.316,41.0,81.8187,139.1483

@@ -1,0 +1,74 @@
+/*
+ * Copyright 1999-2018 Alibaba Group Holding Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.alibaba.druid.bvt.sql.eval;
+
+import com.alibaba.druid.sql.visitor.SQLEvalVisitorUtils;
+import com.alibaba.druid.util.JdbcConstants;
+import org.junit.jupiter.api.Test;
+
+import java.math.BigDecimal;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EvalTest {
+    @Test
+    public void testEval() throws Exception {
+        assertEquals("A", SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "?", "A"));
+        assertEquals(123, SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "?", 123));
+    }
+
+    @Test
+    public void testEval_1() throws Exception {
+        assertEquals("AB", SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? + ?", "A", "B"));
+        assertEquals(234, SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? + ?", 123, 111));
+    }
+
+    @Test
+    public void testEval_2() throws Exception {
+        assertEquals(110, SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * ?", 10, 11));
+    }
+
+    @Test
+    public void testEval_3() throws Exception {
+        assertEquals(new BigDecimal("110"), SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * ?",
+                new BigDecimal("10"),
+                new BigDecimal("11")));
+    }
+
+    @Test
+    public void testEval_4() throws Exception {
+        assertEquals(new BigDecimal("110"),
+                SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * 11", new BigDecimal("10")));
+    }
+
+    @Test
+    public void testEval_5() throws Exception {
+        assertEquals(new BigDecimal("110.0"),
+                SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * 11.0", new BigDecimal("10")));
+    }
+
+    @Test
+    public void testEval_6() throws Exception {
+        assertEquals(new BigDecimal("110.0"),
+                SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * 11", new BigDecimal("10.0")));
+    }
+
+    @Test
+    public void testEval_7() throws Exception {
+        assertEquals(new BigDecimal("110.0"),
+                SQLEvalVisitorUtils.evalExpr(JdbcConstants.MYSQL, "? * 11.0", "10"));
+    }
+}

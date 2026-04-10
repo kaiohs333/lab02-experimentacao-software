@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/open-location-code,4309,520,2014-09-30T18:26:35Z,5,67,903,3.0,4.9552,6.2944,1.0,1.1791,0.4581,0.0,4.5522,11.3609,16.0,34.2537,53.5807

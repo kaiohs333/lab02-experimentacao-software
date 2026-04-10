@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+react-native-webrtc/react-native-webrtc,4950,1323,2015-09-27T10:57:30Z,82,67,743,4.0,6.1194,9.422,1.0,1.1493,0.359,0.0,8.6567,29.3756,18.0,61.791,155.8543

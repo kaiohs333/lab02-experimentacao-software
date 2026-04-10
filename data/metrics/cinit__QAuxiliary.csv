@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+cinit/QAuxiliary,5501,400,2022-01-29T06:12:36Z,49,559,10548,5.0,7.4723,7.7874,1.0,1.322,0.5866,1.0,40.5098,246.2661,36.0,76.7996,122.9246

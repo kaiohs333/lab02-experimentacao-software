@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+journeyapps/zxing-android-embedded,5935,1292,2012-11-28T16:36:39Z,9,96,2126,4.0,5.4375,5.6899,1.0,1.3646,0.6824,1.0,21.9167,88.3194,27.0,53.8438,76.8057

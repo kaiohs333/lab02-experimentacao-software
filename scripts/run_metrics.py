@@ -1,5 +1,6 @@
 import os
 import csv
+import re
 import subprocess
 import shutil
 import statistics
@@ -24,6 +25,34 @@ def dir_size_mb(path):
             if not os.path.islink(fp):
                 total += os.path.getsize(fp)
     return total / (1024 * 1024)
+
+
+def count_comment_lines(repo_dir):
+    """Conta linhas de comentário em arquivos .java (// e blocos /* */)."""
+    total = 0
+    for dirpath, _, filenames in os.walk(repo_dir):
+        for fname in filenames:
+            if not fname.endswith(".java"):
+                continue
+            fpath = os.path.join(dirpath, fname)
+            try:
+                with open(fpath, "r", encoding="utf-8", errors="ignore") as f:
+                    content = f.read()
+                # Remove strings literais para não contar comentários dentro delas
+                content = re.sub(r'"(?:[^"\\]|\\.)*"', '""', content)
+                # Conta blocos /* ... */
+                block_comments = re.findall(r'/\*.*?\*/', content, re.DOTALL)
+                for block in block_comments:
+                    total += block.count('\n') + 1
+                # Remove blocos para não recontá-los
+                content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
+                # Conta linhas com //
+                for line in content.splitlines():
+                    if re.search(r'//.*', line):
+                        total += 1
+            except Exception:
+                continue
+    return total
 
 
 def clone_repo(repo_name, target_dir):
@@ -55,7 +84,7 @@ def parse_ck_class_csv(output_dir):
         return list(csv.DictReader(f))
 
 
-def summarize_metrics(rows, repo_info):
+def summarize_metrics(rows, repo_info, comment_lines=0):
     metrics = {"cbo": [], "dit": [], "lcom": [], "loc": []}
 
     for row in rows:
@@ -68,12 +97,13 @@ def summarize_metrics(rows, repo_info):
             continue
 
     summary = {
-        "repo":        repo_info["name"],
-        "stars":       repo_info["stars"],
-        "forks":       repo_info["forks"],
-        "created_at":  repo_info["created_at"],
-        "releases":    repo_info["releases"],
-        "num_classes": len(rows),
+        "repo":          repo_info["name"],
+        "stars":         repo_info["stars"],
+        "forks":         repo_info["forks"],
+        "created_at":    repo_info["created_at"],
+        "releases":      repo_info["releases"],
+        "num_classes":   len(rows),
+        "comment_lines": comment_lines,
     }
 
     for metric, values in metrics.items():
@@ -117,15 +147,19 @@ def process_repo(repo_info, keep_clone=False, progress=""):
             size_mb = dir_size_mb(clone_target)
             print(f"OK ({size_mb:.1f} MB em disco)")
 
+        print(f"  Contando comentários...", end=" ", flush=True)
+        comment_lines = count_comment_lines(clone_target)
+        print(f"OK ({comment_lines} linhas)")
+
         print(f"  Rodando CK...", end=" ", flush=True)
         run_ck(clone_target, ck_output)
         print("OK")
 
         rows = parse_ck_class_csv(ck_output)
-        summary = summarize_metrics(rows, repo_info)
+        summary = summarize_metrics(rows, repo_info, comment_lines)
         save_summary(summary, summary_path)
 
-        print(f"  Classes: {len(rows)} | CBO={summary['cbo_median']} | DIT={summary['dit_median']} | LCOM={summary['lcom_median']} | LOC={summary['loc_median']}")
+        print(f"  Classes: {len(rows)} | Comments: {comment_lines} | CBO={summary['cbo_median']} | DIT={summary['dit_median']} | LCOM={summary['lcom_median']} | LOC={summary['loc_median']}")
 
     finally:
         if not keep_clone and os.path.exists(clone_target):

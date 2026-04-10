@@ -1,0 +1,2 @@
+repo,stars,forks,created_at,releases,num_classes,comment_lines,cbo_median,cbo_mean,cbo_stdev,dit_median,dit_mean,dit_stdev,lcom_median,lcom_mean,lcom_stdev,loc_median,loc_mean,loc_stdev
+google/guice,12733,1686,2014-05-28T23:18:53Z,19,3886,21841,3.0,3.8078,5.4098,1.0,1.3037,1.2489,0.0,8.4622,77.8651,6.0,21.8201,73.2206
